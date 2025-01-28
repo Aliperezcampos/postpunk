@@ -1,0 +1,19 @@
+-- Insertar datos en la tabla Musica
+INSERT INTO Musica (titulo, enlace) VALUES ('Bandas Post-Punk', 'https://example.com/bandas-post-punk');
+INSERT INTO Musica (titulo, enlace) VALUES ('Álbumes Clásicos', 'https://example.com/albumes-clasicos');
+INSERT INTO Musica (titulo, enlace) VALUES ('Conciertos y Eventos', 'https://example.com/conciertos');
+
+-- Insertar datos en la tabla Literatura
+INSERT INTO Literatura (titulo, enlace) VALUES ('Libros Recomendados', 'https://example.com/libros-recomendados');
+INSERT INTO Literatura (titulo, enlace) VALUES ('Revistas y Fanzines', 'https://example.com/revistas-y-fanzines');
+INSERT INTO Literatura (titulo, enlace) VALUES ('Autores Influyentes', 'https://example.com/autores-influyentes');
+
+-- Insertar datos en la tabla Arte
+INSERT INTO Arte (titulo, enlace) VALUES ('Galerías y Exposiciones', 'https://example.com/galerias');
+INSERT INTO Arte (titulo, enlace) VALUES ('Artistas Emergentes', 'https://example.com/artistas-emergentes');
+INSERT INTO Arte (titulo, enlace) VALUES ('Movimientos Artísticos', 'https://example.com/movimientos-artisticos');
+
+-- Insertar datos en la tabla Eventos
+INSERT INTO Eventos (titulo, enlace) VALUES ('Festivales de Música', 'https://example.com/festivales');
+INSERT INTO Eventos (titulo, enlace) VALUES ('Charlas y Seminarios', 'https://example.com/charlas');
+INSERT INTO Eventos (titulo, enlace) VALUES ('Talleres y Cursos', 'https://example.com/talleres');

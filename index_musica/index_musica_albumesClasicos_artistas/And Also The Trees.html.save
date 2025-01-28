@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>And Also The Trees - Trayectoria y Estilo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Old+London&family=Alte+Schwabacher&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="\Post-Punk-Site\style.css">
+</head>
+<body>
+    <header class="navbar">
+        <button class="big-button" onclick="window.history.back();">← Regresar</button>
+    </header>
+    <div class="content">
+        <h1>And Also The Trees</h1>
+        <div class="image-container">
+            <img src="C:\Users\Alipe\Documents\GitHub\mini_gadgets_html\index_musica\musica_albumesClasicos_artistas\images\And Also The Trees.jpeg" alt="And Also The Trees">
+        </div>
+        <section>
+            <h2>Trayectoria</h2>
+            <p>Formada en 1979 en Worcestershire. Combinaron post-punk con folk y goth-rock.</p>
+        </section>
+        <section>
+            <h2>Estilo</h2>
+            <p>Música melancólica y atmosférica, con letras poéticas.</p>
+        </section>
+        <div class="youtube-links">
+            <h2>Enlaces a YouTube Music</h2>
+            <a href="https://music.youtube.com/search?q=And+Also+The+Trees" target="_blank">Buscar And Also The Trees en YouTube Music</a>
+        </div>
+    </div>
+</body>
+</html>
