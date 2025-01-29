@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultura Post-Punk</title>
-    <link rel="stylesheet" href=style.css>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
     <style> /*iconos redes sociales FontAwesome*/
         .vampire-links a {
-    margin: 0 15px;
-    color: #ffd700; /* Amarillo neón */
-    font-size: 32px; /* Tamaño de los iconos */
-    transition: color 0.3s ease-in-out;
-    text-decoration: none;
+            margin: 0 15px;
+            color: #ffd700; /* Amarillo neón */
+            font-size: 48px; /* Tamaño de los iconos aumentado */
+            transition: color 0.3s ease-in-out;
+            text-decoration: none;
         }
         .vampire-links a:hover {
             color: #ffea00; /* Amarillo más brillante al pasar el ratón por encima */
@@ -21,12 +21,18 @@
         .vampire-links a i {
             border: 2px solid #ffd700; /* Bordes de amarillo neón */
             border-radius: 50%; /* Forma redondeada */
-            padding: 10px;
+            padding: 15px; /* Espaciado mayor */
             background-color: #1a1a1a; /* Fondo oscuro */
             transition: background-color 0.3s ease-in-out;
         }
         .vampire-links a:hover i {
             background-color: #ffea00; /* Fondo amarillo neón al pasar el ratón por encima */
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
         }
     </style>
 
@@ -51,13 +57,13 @@
             <h1>Bienvenido Cultura Post-Punk</h1>
             <p>Explora el oscuro y fascinante mundo del post-punk, donde la música, la literatura y el arte se combinan para crear una experiencia única.</p>
 
-            
-            <div class="icon-container">
+            <!-- Iconos de redes sociales a mitad de la página -->
+            <div class="icon-container vampire-links">
                 <a href="https://www.instagram.com/guillermoaliperezcampos/" target="_blank">
-                    <i class="fab fa-instagram dark-academia background-dark-academia"></i>
+                    <i class="fab fa-instagram"></i>
                 </a>
                 <a href="https://www.youtube.com/@Aliperezcampos" target="_blank">
-                    <i class="fab fa-youtube dark-academia background-dark-academia"></i>
+                    <i class="fab fa-youtube"></i>
                 </a>
             </div>
         </section>
