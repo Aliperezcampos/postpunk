@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>23 Skidoo - Trayectoria y Estilo</title>
     <link href="https://fonts.googleapis.com/css2?family=Old+London&family=Alte+Schwabacher&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/postpunk/style.css">
+    <link rel="stylesheet" href="\postpunk\style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -23,16 +23,19 @@
             padding: 10px 20px;
             border-radius: 8px;
             font-family: 'Alte Schwabacher', serif;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         .youtube {
             background-color: #FF0000;
+            border: 2px solid #FF0000; /* Bordes rojos */
         }
         .spotify {
             background-color: #1DB954;
+            border: 2px solid #1DB954; /* Bordes verdes */
         }
         .music-link:hover {
-            opacity: 0.8;
+            opacity: 0.9;
+            color: #000; /* Texto oscuro al pasar el mouse */
         }
         .music-icon {
             margin-right: 10px;
