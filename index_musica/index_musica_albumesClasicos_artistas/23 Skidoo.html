@@ -6,6 +6,38 @@
     <title>23 Skidoo - Trayectoria y Estilo</title>
     <link href="https://fonts.googleapis.com/css2?family=Old+London&family=Alte+Schwabacher&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="\postpunk\style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <style>
+        .music-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .music-link {
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: 'Alte Schwabacher', serif;
+            transition: background-color 0.3s ease;
+        }
+        .youtube {
+            background-color: #FF0000;
+        }
+        .spotify {
+            background-color: #1DB954;
+        }
+        .music-link:hover {
+            opacity: 0.8;
+        }
+        .music-icon {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -24,9 +56,15 @@
             <h2>Estilo</h2>
             <p>Ritmos tribales, sonidos experimentales y un enfoque vanguardista.</p>
         </section>
-        <div class="youtube-links">
-            <h2>Enlaces a YouTube Music</h2>
-            <a href="https://music.youtube.com/search?q=23+Skidoo" target="_blank">Buscar 23 Skidoo en YouTube Music</a>
+        <div class="music-links">
+            <a class="music-link youtube" href="https://music.youtube.com/search?q=23+Skidoo" target="_blank">
+                <i class="fab fa-youtube music-icon"></i>
+                Buscar 23 Skidoo en YouTube Music
+            </a>
+            <a class="music-link spotify" href="https://open.spotify.com/search/23%20Skidoo" target="_blank">
+                <i class="fab fa-spotify music-icon"></i>
+                Buscar 23 Skidoo en Spotify
+            </a>
         </div>
     </div>
 </body>
