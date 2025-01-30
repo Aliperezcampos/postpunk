@@ -6,11 +6,10 @@
     <title>Joy Division - Trayectoria y Estilo</title>
     <link href="https://fonts.googleapis.com/css2?family=Old+London&family=Alte+Schwabacher&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/postpunk/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="navbar">
-        <button class="big-button" onclick="window.history.back();">← Regresar</button>
-    </header>
+    <button class="back-button" onclick="window.history.back();">← Regresar</button>
     <div class="content">
         <h1>Joy Division</h1>
         <div class="image-container">
@@ -24,10 +23,25 @@
             <h2>Estilo</h2>
             <p>Música oscura y atmosférica, con bajos prominentes, guitarras melancólicas y letras introspectivas. Su álbum <em>Unknown Pleasures</em> es un clásico del género.</p>
         </section>
-        <div class="youtube-links">
-            <h2>Enlaces a YouTube Music</h2>
-            <a href="https://music.youtube.com/search?q=Joy+Division" target="_blank">Buscar Joy Division en YouTube Music</a>
+        <div class="vampire-box">
+            <p><strong>Dato Curioso:</strong> Joy Division es conocido por su influencia en la música gótica y sus presentaciones en vivo cargadas de intensidad emocional.</p>
         </div>
+        <section class="music-services">
+            <h2>Servicios de Música</h2>
+            <div class="music-links">
+                <a class="music-link youtube" href="https://music.youtube.com/search?q=Joy+Division" target="_blank">
+                    <img class="music-icon" src="/postpunk/icons/youtube_music.png" alt="YouTube Music">
+                    YouTube Music
+                </a>
+                <a class="music-link spotify" href="https://open.spotify.com/search/Joy%20Division" target="_blank">
+                    <img class="music-icon" src="/postpunk/icons/spotify.png" alt="Spotify">
+                    Spotify
+                </a>
+            </div>
+        </section>
     </div>
+    <footer>
+        <p>© 2025 Joy Division. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
