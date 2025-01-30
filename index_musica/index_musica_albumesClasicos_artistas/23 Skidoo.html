@@ -13,25 +13,23 @@
             padding: 0;
             font-family: 'Cinzel Decorative', serif;
         }
-        .navbar {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-        .big-button {
-            font-size: 1em; /* Reducir el tamaño del texto */
-            padding: 5px 10px; /* Reducir el espacio alrededor del texto */
-            background-color: #4B0082; /* Fondo púrpura oscuro */
-            color: #FFD700; /* Color amarillo neón */
-            border: 2px solid #800080; /* Borde púrpura neón */
-            border-radius: 5px; /* Reducir el radio de las esquinas */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 0.9em;
+            padding: 5px 10px;
+            background-color: #4B0082;
+            color: #FFD700;
+            border: 2px solid #800080;
+            border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
         }
-        .big-button:hover {
-            background-color: #800080; /* Cambio a púrpura neón */
-            color: #000000; /* Color de texto oscuro */
-            box-shadow: 0 0 10px #800080, 0 0 20px #800080; /* Sombra luminosa */
+        .back-button:hover {
+            background-color: #800080;
+            color: #000000;
+            box-shadow: 0 0 10px #800080, 0 0 20px #800080;
         }
         .content {
             max-width: 800px;
@@ -80,9 +78,7 @@
     </style>
 </head>
 <body>
-    <header class="navbar">
-        <button class="big-button" onclick="window.history.back();">← Regresar</button>
-    </header>
+    <button class="back-button" onclick="window.history.back();">← Regresar</button>
     <div class="content">
         <h1>23 Skidoo</h1>
         <div class="image-container">
