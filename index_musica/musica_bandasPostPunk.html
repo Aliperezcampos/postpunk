@@ -4,7 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artistas de Post-Punk Clásicos y Modernos</title>
-    <link rel="stylesheet" href="/postpunk/style.css">
+    <link rel="stylesheet" href="/postpunk/postpunk/style.css">
+    
+    <style>
+        /* Animación para cambiar de color */
+        @keyframes cambiarColor {
+            0% { border-color: #800080; box-shadow: 0 0 15px #800080, 0 0 30px #800080; }
+            25% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000; }
+            50% { border-color: #00ff00; box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00; }
+            75% { border-color: #0000ff; box-shadow: 0 0 15px #0000ff, 0 0 30px #0000ff; }
+            100% { border-color: #800080; box-shadow: 0 0 15px #800080, 0 0 30px #800080; }
+        }
+        /* Estilo para el icono vampírico */
+        .icono-vampirico {
+            display: block;
+            margin: 20px auto;
+            width: 100px; /* Reducir el tamaño del icono */
+            height: 100px; /* Reducir el tamaño del icono */
+            background-image: url('/postpunk/postpunk/icons/vampire.png');
+            background-size: cover;
+            border-radius: 50%;
+            border: 5px solid #800080; /* Púrpura neón inicial */
+            box-shadow: 0 0 15px #800080, 0 0 30px #800080; /* Sombra luminosa púrpura inicial */
+            animation: cambiarColor 5s infinite; /* Aplicar la animación */
+        }
+        /* Estilo para el botón grande de regreso */
+        .big-button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+        }
+        /* Centrar el contenido del header */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        /* Centrar el contenido del main */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -12,6 +54,7 @@
     </header>
 
     <main class="content">
+        <div class="icono-vampirico"></div>
         <section id="clasicos">
             <h2>Artistas Clásicos</h2>
             <ul>
@@ -119,7 +162,6 @@
                 <li><a href="/postpunk/index_musica/bandas_modernas_html/Parquet Courts.html">Parquet Courts</a></li>
                 <li><a href="/postpunk/index_musica/bandas_modernas_html/Viagra Boys.html">Viagra Boys</a></li>
                 <li><a href="/postpunk/index_musica/bandas_modernas_html/Fontaines D.C..html">Fontaines D.C.</a></li>
-
 
             </ul>
         </section>
