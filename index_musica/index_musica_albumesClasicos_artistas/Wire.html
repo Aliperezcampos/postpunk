@@ -6,11 +6,10 @@
     <title>Wire - Trayectoria y Estilo</title>
     <link href="https://fonts.googleapis.com/css2?family=Old+London&family=Alte+Schwabacher&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/postpunk/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="navbar">
-        <button class="big-button" onclick="window.history.back();">← Regresar</button>
-    </header>
+    <button class="back-button" onclick="window.history.back();">← Regresar</button>
     <div class="content">
         <h1>Wire</h1>
         <div class="image-container">
@@ -24,10 +23,25 @@
             <h2>Estilo</h2>
             <p>Música minimalista y experimental, con letras inteligentes. <em>Pink Flag</em> es un álbum influyente.</p>
         </section>
-        <div class="youtube-links">
-            <h2>Enlaces a YouTube Music</h2>
-            <a href="https://music.youtube.com/search?q=Wire" target="_blank">Buscar Wire en YouTube Music</a>
+        <div class="vampire-box">
+            <p><strong>Dato Curioso:</strong> Wire es conocida por su enfoque experimental y su impacto en la escena underground.</p>
         </div>
+        <section class="music-services">
+            <h2>Servicios de Música</h2>
+            <div class="music-links">
+                <a class="music-link youtube" href="https://music.youtube.com/search?q=Wire" target="_blank">
+                    <img class="music-icon" src="/postpunk/icons/youtube_music.png" alt="YouTube Music">
+                    YouTube Music
+                </a>
+                <a class="music-link spotify" href="https://open.spotify.com/search/Wire" target="_blank">
+                    <img class="music-icon" src="/postpunk/icons/spotify.png" alt="Spotify">
+                    Spotify
+                </a>
+            </div>
+        </section>
     </div>
+    <footer>
+        <p>© 2025 Wire. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
