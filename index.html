@@ -6,7 +6,8 @@
     <title>Cultura Post-Punk</title>
     <link rel="stylesheet" href="style.css">
     
-    <style> /* iconos redes sociales estilo noventero redondos */
+    <style>
+        /* iconos redes sociales estilo noventero redondos */
         .retro-links a {
             margin: 0 20px;
             color: #ffd700; /* Color amarillo neón */
@@ -35,6 +36,79 @@
             display: flex;
             justify-content: center;
             margin: 40px 0;
+        }
+
+        /* Estilo vampírico moderno para el menú */
+        .navbar {
+            background-color: #1a1a1a;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #ff0000;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+        .nav-links a:hover::before {
+            width: 100%;
+            left: 0;
+        }
+        .nav-links a:hover {
+            color: #ff0000;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 0, 0, 0.1);
+            clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+            transition: clip-path 0.3s ease-in-out;
+            z-index: -1;
+        }
+        .nav-links a:hover::after {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        /* Animación de cambio de color RGB */
+        @keyframes colorChange {
+            0% { color: #ff0000; }
+            25% { color: #00ff00; }
+            50% { color: #0000ff; }
+            75% { color: #ffff00; }
+            100% { color: #ff0000; }
+        }
+        .nav-links a {
+            animation: colorChange 5s infinite;
         }
     </style>
 
