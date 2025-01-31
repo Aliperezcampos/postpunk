@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artistas de Post-Punk Clásicos y Modernos</title>
-    <link rel="stylesheet" href="/postpunk/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=/postpunk/tyle.css>
     
     <style>
         /* Animación para cambiar de color */
@@ -21,17 +22,12 @@
             margin: 20px auto;
             width: 100px; /* Reducir el tamaño del icono */
             height: 100px; /* Reducir el tamaño del icono */
-            background-image: url('/postpunk/icons/vampire.png');
+            background-image: url('/postpunk/icons/music_bat.png');
             background-size: cover;
             border-radius: 50%;
             border: 5px solid #800080; /* Púrpura neón inicial */
             box-shadow: 0 0 15px #800080, 0 0 30px #800080; /* Sombra luminosa púrpura inicial */
             animation: cambiarColor 5s infinite; /* Aplicar la animación */
-        }
-        /* Estilo para el botón grande de regreso */
-        .big-button {
-            font-size: 1.5em;
-            padding: 10px 20px;
         }
         /* Centrar el contenido del header */
         .navbar {
@@ -46,13 +42,16 @@
             flex-direction: column;
             align-items: center;
         }
+        /* Estilo gótico vampírico para los títulos */
+        h2 {
+            font-family: 'Nosifer', cursive; /* Tipografía gótica vampírica */
+            color: #ff0000; /* Color rojo */
+            text-shadow: 2px 2px 8px #000000; /* Sombra de texto negra */
+        }
     </style>
 </head>
 <body>
-    <header class="navbar">
-        <button class="big-button" onclick="window.history.back();">← Regresar</button>
-    </header>
-
+    <a href="#top" class="vampire-button">🔺 Regresar</a>
     <main class="content">
         <div class="icono-vampirico"></div>
         <section id="clasicos">
@@ -128,6 +127,7 @@
                 <li><a href="/postpunk/index_musica/index_musica_albumesClasicos_artistas/Clock DVA.html">Clock DVA</a></li>
                 <li><a href="/postpunk/index_musica/index_musica_albumesClasicos_artistas/Kalahari Surfers.html">Kalahari Surfers</a></li>
             </ul>
+
         </section>
 
         <section id="modernos">
