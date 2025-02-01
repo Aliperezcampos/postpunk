@@ -6,6 +6,7 @@
     <title>The Psychedelic Furs - The Psychedelic Furs</title>
     <link href="https://fonts.googleapis.com/css2?family=Old+London&family=Alte+Schwabacher&family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/postpunk/style.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         .curiosity-box {
             background-color: rgba(75, 0, 130, 0.8); /* Púrpura transparente */
@@ -27,9 +28,7 @@
     </style>
 </head>
 <body>
-    <header class="navbar">
-        <button class="big-button" onclick="window.history.back();">← Regresar</button>
-    </header>
+    <button class="back-button" onclick="window.history.back();">← Regresar</button>
     <div class="content">
         <h1>The Psychedelic Furs - The Psychedelic Furs</h1>
         <div class="image-container">
@@ -42,10 +41,22 @@
                 <p><strong>¿Sabías que?</strong> El álbum <em>The Psychedelic Furs</em> destaca por su fusión única de melodía y atmósfera, convirtiéndose en una piedra angular del post-punk, gracias en gran parte a la voz inconfundible de Richard Butler.</p>
             </div>
         </section>
-        <div class="youtube-links">
-            <h2>Enlaces a YouTube Music</h2>
-            <a href="https://music.youtube.com/search?q=The+Psychedelic+Furs+The+Psychedelic+Furs" target="_blank">Buscar "The Psychedelic Furs" en YouTube Music</a>
-        </div>
+        <section class="music-services">
+            <h2>Buscar Artista en Servicios de Música</h2>
+            <div class="music-links">
+                <a class="music-link youtube" href="https://music.youtube.com/search?q=The+Psychedelic+Furs+The+Psychedelic+Furs" target="_blank">
+                    <img class="music-icon" src="/postpunk/icons/youtube_music.png" alt="YouTube Music">
+                    YouTube Music
+                </a>
+                <a class="music-link spotify" href="https://open.spotify.com/search/The%20Psychedelic%20Furs%20The%20Psychedelic%20Furs" target="_blank">
+                    <img class="music-icon" src="/postpunk/icons/spotify.png" alt="Spotify">
+                    Spotify
+                </a>
+            </div>
+        </section>
     </div>
+    <footer>
+        <p>© 2025 The Psychedelic Furs. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
