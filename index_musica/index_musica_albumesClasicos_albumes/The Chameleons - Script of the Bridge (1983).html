@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Chameleons - Script of the Bridge</title>
     <link href="https://fonts.googleapis.com/css2?family=Old+London&family=Alte+Schwabacher&family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/postpunk/style.css">
+        <link rel="stylesheet" href="/postpunk/style.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         .curiosity-box {
             background-color: rgba(75, 0, 130, 0.8); /* Púrpura transparente */
@@ -27,9 +28,7 @@
     </style>
 </head>
 <body>
-    <header class="navbar">
-        <button class="big-button" onclick="window.history.back();">← Regresar</button>
-    </header>
+    <button class="back-button" onclick="window.history.back();">← Regresar</button>
     <div class="content">
         <h1>The Chameleons - Script of the Bridge</h1>
         <div class="image-container">
@@ -42,10 +41,22 @@
                 <p><strong>¿Sabías que?</strong> El álbum <em>Script of the Bridge</em> de The Chameleons destaca por su sonido atmosférico y sus letras profundamente introspectivas, lo que lo convierte en una pieza esencial en la evolución del post-punk.</p>
             </div>
         </section>
-        <div class="youtube-links">
-            <h2>Enlaces a YouTube Music</h2>
-            <a href="https://music.youtube.com/search?q=The+Chameleons+Script+of+the+Bridge" target="_blank">Buscar "Script of the Bridge" en YouTube Music</a>
-        </div>
+        <section class="music-services">
+            <h2>Buscar Artista en Servicios de Música</h2>
+            <div class="music-links">
+                <a class="music-link youtube" href="https://music.youtube.com/search?q=The+Chameleons+Script+of+the+Bridge" target="_blank">
+                    <img class="music-icon" src="/postpunk/icons/youtube_music.png" alt="YouTube Music">
+                    YouTube Music
+                </a>
+                <a class="music-link spotify" href="https://open.spotify.com/search/The%20Chameleons%20Script%20of%20the%20Bridge" target="_blank">
+                    <img class="music-icon" src="/postpunk/icons/spotify.png" alt="Spotify">
+                    Spotify
+                </a>
+            </div>
+        </section>
     </div>
+    <footer>
+        <p>© 2025 The Chameleons. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
