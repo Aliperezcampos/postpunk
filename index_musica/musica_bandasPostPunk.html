@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artistas de Post-Punk Clásicos y Modernos</title>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=/postpunk/style.css>
+    <link rel="stylesheet" href="/postpunk/style.css">
     
     <style>
         /* Animación para cambiar de color */
@@ -49,9 +49,14 @@
             text-shadow: 2px 2px 8px #000000; /* Sombra de texto negra */
         }
     </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body>
-    <a href="#top" class="vampire-button">🔺 Regresar</a>
+    <a href="javascript:void(0);" class="vampire-button" onclick="goBack()">🔺 Regresar</a>
     <main class="content">
         <div class="icono-vampirico"></div>
         <section id="clasicos">
@@ -127,7 +132,6 @@
                 <li><a href="/postpunk/index_musica/index_musica_albumesClasicos_artistas/Clock DVA.html">Clock DVA</a></li>
                 <li><a href="/postpunk/index_musica/index_musica_albumesClasicos_artistas/Kalahari Surfers.html">Kalahari Surfers</a></li>
             </ul>
-
         </section>
 
         <section id="modernos">
@@ -162,7 +166,6 @@
                 <li><a href="/postpunk/index_musica/bandas_modernas_html/Parquet Courts.html">Parquet Courts</a></li>
                 <li><a href="/postpunk/index_musica/bandas_modernas_html/Viagra Boys.html">Viagra Boys</a></li>
                 <li><a href="/postpunk/index_musica/bandas_modernas_html/Fontaines D.C..html">Fontaines D.C.</a></li>
-
             </ul>
         </section>
     </main>
