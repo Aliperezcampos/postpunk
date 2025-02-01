@@ -3,6 +3,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
+/* ...existing code... */
+
+.navbar {
+    width: 100%;
+    background-color: #1a1a1a; /* Fondo oscuro para el menú */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el menú */
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #bb0000; /* Color del texto del menú */
+    transition: color 0.3s ease;
+    font-family: 'Nosifer', cursive; /* Fuente tétrica para el menú */
+}
+
+.nav-links a:hover {
+    color: #ff0000; /* Color del texto al pasar el ratón */
+}
+
+.nav-links .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a; /* Fondo oscuro para el submenú */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para el submenú */
+}
+
+.nav-links .dropdown li {
+    width: 200px;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links .dropdown {
+        position: static;
+        box-shadow: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+    }
+}
+
 body {
     background-color: #0d0d0d; /* Fondo negro profundo */
     color: #e6e6e6; /* Texto en gris claro */
@@ -73,42 +162,6 @@ a:hover {
     text-shadow: 
         2px 2px 5px #bb0000, /* Sombra roja para efecto vampírico */
         0 0 5px #4b0082; /* Resplandor púrpura */
-}
-
-.navbar {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 1px solid #bb0000; /* Línea roja en la parte inferior */
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 2em;
-    background: none;
-    border: none;
-    color: #e6e6e6;
-    cursor: pointer;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-}
-
-.nav-links a {
-    padding: 14px 20px;
-    text-align: center;
-    display: block;
-    color: #e6e6e6;
 }
 
 .nav-links a:hover {
