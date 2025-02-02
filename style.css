@@ -5,6 +5,10 @@
 
 /* ...existing code... */
 
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+/* ...existing code... */
+
 .navbar {
     width: 100%;
     background-color: #1a1a1a; /* Fondo oscuro para el menú */
@@ -13,6 +17,7 @@
     align-items: center;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el menú */
+    z-index: 1000; /* Asegura que el menú esté por encima del contenido */
 }
 
 .nav-links ul {
