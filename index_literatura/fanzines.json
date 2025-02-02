@@ -1,0 +1,83 @@
+{
+    "name": "fanzines",
+    "data": [
+        {
+            "titulo": "Sniffin' Glue",
+            "descripcion": "Uno de los primeros fanzines punk, que también cubrió bandas post-punk. Fue creado por Mark Perry en 1976.",
+            "imagen": "imagenes_fanzines/sniffin.jpg",
+            "enlace": "https://en.wikipedia.org/wiki/Sniffin%27_Glue"
+        },
+        {
+            "titulo": "Punk",
+            "descripcion": "Editado por Legs McNeil, importante en la escena punk de Nueva York, también abarcó el desarrollo hacia el post-punk.",
+            "imagen": "imagenes_fanzines/punk.jpg",
+            "enlace": "https://es.wikipedia.org/wiki/Legs_McNeil"
+        },
+        {
+            "titulo": "Vague",
+            "descripcion": "Fanzine británico que cubrió el post-punk, el goth y la cultura alternativa.",
+            "imagen": "imagenes_fanzines/vague.jpg",
+            "enlace": "https://pc-press.co.uk/shop/vague-fanzines-book-volume-1-1979-1984-issues-1-15/"
+        },
+        {
+            "titulo": "Bombsite",
+            "descripcion": "Otro fanzine británico que documentó la escena punk y post-punk.",
+            "imagen": "imagenes_fanzines/bombsite.jpg",
+            "enlace": "https://archive.org/details/bombsite_2"
+        },
+        {
+            "titulo": "Search & Destroy",
+            "descripcion": "Publicado por V. Vale en San Francisco, también se aventuró en el post-punk más tarde.",
+            "imagen": "imagenes_fanzines/search.jpg",
+            "enlace": "https://en.wikipedia.org/wiki/RE/Search_Publications"
+        },
+        {
+            "titulo": "Alternative Press",
+            "descripcion": "Aunque comenzó más como un fanzine punk, creció para cubrir una amplia gama de música alternativa, incluyendo post-punk.",
+            "imagen": "imagenes_fanzines/alternative.jpg",
+            "enlace": "https://es.wikipedia.org/wiki/Alternative_Press"
+        },
+        {
+            "titulo": "Maximum RocknRoll",
+            "descripcion": "Primordialmente punk, pero ha incluido a bandas post-punk y de géneros relacionados a lo largo de los años.",
+            "imagen": "imagenes_fanzines/maxium.jpg",
+            "enlace": "https://es.wikipedia.org/wiki/Maximumrocknroll"
+        },
+        {
+            "titulo": "Punk Planet",
+            "descripcion": "Aunque más conocido por el punk, cubrió la escena post-punk y otros géneros alternativos.",
+            "imagen": "imagenes_fanzines/punk_planet.jpg",
+            "enlace": "https://en.wikipedia.org/wiki/Punk_Planet"
+        },
+        {
+            "titulo": "ZigZag",
+            "descripcion": "Fanzine británico que, aunque comenzó con un enfoque más amplio, cubrió el post-punk con el tiempo.",
+            "imagen": "imagenes_fanzines/zigzag.jpg",
+            "enlace": "https://en.wikipedia.org/wiki/ZigZag_%28magazine%29"
+        },
+        {
+            "titulo": "Kill Your Pet Puppy",
+            "descripcion": "Fanzine del Reino Unido que se centró en la música post-punk y la cultura goth.",
+            "imagen": "imagenes_fanzines/kill.jpg",
+            "enlace": "https://en.wikipedia.org/wiki/Kill_Your_Pet_Puppy"
+        },
+        {
+            "titulo": "Artcore Fanzine",
+            "descripcion": "Publicado por primera vez en 1986, cubrió el punk, post-punk y la cultura underground en el Reino Unido.",
+            "imagen": "imagenes_fanzines/artcore.jpg",
+            "enlace": "https://en.wikipedia.org/wiki/Artcore_Fanzine"
+        },
+        {
+            "titulo": "Jungle Records' Fanzine",
+            "descripcion": "Publicado por el sello Jungle Records, enfocado en bandas post-punk y relacionadas.",
+            "imagen": "imagenes_fanzines/jungle.jpg",
+            "enlace": "https://condenadofanzine.com/tag/jungle-records/"
+        },
+        {
+            "titulo": "Wrack - El sonido del cuervo",
+            "descripcion": "Un fanzine español que, aunque no es exclusivamente post-punk, ha cubierto el género.",
+            "imagen": "imagenes_fanzines/wrack.jpg",
+            "enlace": "https://unbrainedcomics.com/store/wrack-especial-joe-strummer/"
+        }
+    ]
+}

@@ -4,40 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revistas y Fanzines sobre Post-Punk</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/postpunk/style.css">
+    <style>
+        .publication-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #8b0000; /* Borde inferior rojo oscuro */
+        }
+        .publication-item img {
+            max-width: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .publication-item h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #ff0000; /* Color rojo sangre */
+            text-shadow: 1px 1px 2px #8b0000; /* Sombra roja oscura */
+            font-family: 'Cinzel', serif; /* Fuente estilo gótico */
+        }
+        .publication-item p {
+            margin: 5px 0;
+            color: #666;
+        }
+        /* Estilos para el modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #8b0000;
+            width: auto;
+            max-width: 80%;
+            background-color: #1c1c1c;
+            color: #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #8b0000;
+        }
+        .close {
+            color: #e0e0e0;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: #ff0000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body>
+    <a href="javascript:void(0);" class="vampire-button" onclick="goBack()">🔺 Regresar</a>
     <main class="content">
         <section id="publicaciones-influyentes">
             <h1>Revistas y Fanzines sobre Post-Punk</h1>
+            
             <h2>Revistas:</h2>
-            <ul>
-                <li><a href="publicaciones/sounds.html">Sounds</a> - Aunque ya no existe, fue una de las revistas más influyentes en la cobertura del post-punk en el Reino Unido durante los años 70 y 80.</li>
-                <li><a href="publicaciones/nme.html">NME (New Musical Express)</a> - Cubrió extensamente el post-punk, especialmente en sus años dorados de finales de los 70 y principios de los 80.</li>
-                <li><a href="publicaciones/melody_maker.html">Melody Maker</a> - Otra revista británica que documentó la escena musical, incluyendo el post-punk.</li>
-                <li><a href="publicaciones/rolling_stone.html">Rolling Stone (edición británica y estadounidense)</a> - Aunque no exclusivamente de post-punk, cubrió muchos aspectos del género.</li>
-                <li><a href="publicaciones/the_face.html">The Face</a> - Revista cultural que a menudo incluía artículos sobre bandas post-punk y la estética asociada.</li>
-                <li><a href="publicaciones/q_magazine.html">Q Magazine</a> - Conocida por sus retrospectivas detalladas y entrevistas con bandas de post-punk.</li>
-            </ul>
+            <div id="revistas-section">
+                <!-- Aquí se insertarán dinámicamente las revistas -->
+            </div>
 
             <h2>Fanzines:</h2>
-            <ul>
-                <li><a href="publicaciones/sniffin_glue.html">Sniffin' Glue</a> - Uno de los primeros fanzines punk, que también cubrió bandas post-punk. Fue creado por Mark Perry en 1976.</li>
-                <li><a href="publicaciones/punk.html">Punk</a> - Editado por Legs McNeil, importante en la escena punk de Nueva York, también abarcó el desarrollo hacia el post-punk.</li>
-                <li><a href="publicaciones/vague.html">Vague</a> - Fanzine británico que cubrió el post-punk, el goth y la cultura alternativa.</li>
-                <li><a href="publicaciones/bombsite.html">Bombsite</a> - Otro fanzine británico que documentó la escena punk y post-punk.</li>
-                <li><a href="publicaciones/search_and_destroy.html">Search & Destroy</a> - Publicado por V. Vale en San Francisco, también se aventuró en el post-punk más tarde.</li>
-                <li><a href="publicaciones/alternative_press.html">Alternative Press</a> - Aunque comenzó más como un fanzine punk, creció para cubrir una amplia gama de música alternativa, incluyendo post-punk.</li>
-                <li><a href="publicaciones/maximum_rocknroll.html">Maximum RocknRoll</a> - Primordialmente punk, pero ha incluido a bandas post-punk y de géneros relacionados a lo largo de los años.</li>
-                <li><a href="publicaciones/punk_planet.html">Punk Planet</a> - Aunque más conocido por el punk, cubrió la escena post-punk y otros géneros alternativos.</li>
-                <li><a href="publicaciones/zigzag.html">ZigZag</a> - Fanzine británico que, aunque comenzó con un enfoque más amplio, cubrió el post-punk con el tiempo.</li>
-                <li><a href="publicaciones/kill_your_pet_puppy.html">Kill Your Pet Puppy</a> - Fanzine del Reino Unido que se centró en la música post-punk y la cultura goth.</li>
-                <li><a href="publicaciones/artcore_fanzine.html">Artcore Fanzine</a> - Publicado por primera vez en 1986, cubrió el punk, post-punk y la cultura underground en el Reino Unido.</li>
-                <li><a href="publicaciones/jungle_records_fanzine.html">Jungle Records' Fanzine</a> - Publicado por el sello Jungle Records, enfocado en bandas post-punk y relacionadas.</li>
-                <li><a href="publicaciones/creme_brulee.html">Crème Brûlée</a> - Fanzine que documentó el post-rock y géneros experimentales, pero también tocó el post-punk.</li>
-                <li><a href="publicaciones/wrack.html">Wrack - El sonido del cuervo</a> - Un fanzine español que, aunque no es exclusivamente post-punk, ha cubierto el género.</li>
-            </ul>
+            <div id="fanzines-section">
+                <!-- Aquí se insertarán dinámicamente los fanzines -->
+            </div>
         </section>
     </main>
+
+    <!-- El Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="" style="width: 100%; height: auto;">
+            <div id="modal-description"></div>
+            <a id="modal-link" href="" target="_blank" style="color: #ff0000;">Más información</a>
+        </div>
+    </div>
+
+    <script>
+        async function cargarPublicaciones(url, sectionId) {
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                const publicacionesData = data.data;
+                const publicacionesSection = document.getElementById(sectionId);
+
+                publicacionesData.forEach(publicacion => {
+                    const publicacionHTML = `
+                        <div class="publication-item">
+                            <img src="${publicacion.imagen}" alt="Portada de ${publicacion.titulo}" onclick="openModal('${publicacion.imagen}', '${publicacion.descripcion}', '${publicacion.titulo}', '${publicacion.enlace}')">
+                            <div>
+                                <h3>${publicacion.titulo}</h3>
+                                <p>${publicacion.descripcion}</p>
+                                <a href="${publicacion.enlace}" target="_blank">Visitar sitio web</a>
+                            </div>
+                        </div>
+                    `;
+                    publicacionesSection.insertAdjacentHTML('beforeend', publicacionHTML);
+                });
+
+            } catch (error) {
+                console.error('Error al cargar las publicaciones:', error);
+            }
+        }
+
+        function openModal(imagen, descripcion, titulo, enlace) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("modal-image");
+            const modalDescription = document.getElementById("modal-description");
+            const modalLink = document.getElementById("modal-link");
+
+            modal.style.display = "block";
+            modalImg.src = imagen;
+            modalDescription.innerHTML = `<h2>${titulo}</h2><p>${descripcion}</p>`;
+            modalLink.href = enlace;
+        }
+
+        const modal = document.getElementById("myModal");
+        const span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Cargar las revistas y fanzines
+        cargarPublicaciones('revistas.json', 'revistas-section');
+        cargarPublicaciones('fanzines.json', 'fanzines-section');
+    </script>
 </body>
 </html>
