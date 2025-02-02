@@ -1,0 +1,178 @@
+[
+    {
+        "type": "header",
+        "version": "5.2.1",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "postpunk_culture"
+    },
+    {
+        "type": "table",
+        "name": "libros",
+        "database": "postpunk_culture",
+        "data": [
+            {
+                "id": "1",
+                "titulo": "Rip It Up and Start Again: Postpunk 1978-1984",
+                "autor": "Simon Reynolds",
+                "descripcion": "Un análisis profundo del movimiento post-punk en el Reino Unido.",
+                "imagen": "imagenes/Rip It Up and Start Again Postpunk 1978-1984 por Simon Reynolds.jpg",
+                "enlace": "https://archive.org/details/ripitupstartagai0000reyn"
+            },
+            {
+                "id": "2",
+                "titulo": "Unknown Pleasures: Inside Joy Division",
+                "autor": "Peter Hook",
+                "descripcion": "Una mirada desde dentro de una de las bandas más influyentes del post-punk.",
+                "imagen": "imagenes/Unknown Pleasures Inside Joy Division por Peter Hook.jpg",
+                "enlace": "https://archive.org/details/unknownpleasures0000hook_t4o9"
+            },
+            {
+                "id": "3",
+                "titulo": "The Fallen: Searching for the Missing Members of The Fall",
+                "autor": "Dave Simpson",
+                "descripcion": "Explora la historia de The Fall desde una perspectiva más personal.",
+                "imagen": "imagenes/The Fallen Searching for the Missing Members of Joy Division por Dave Thompson.jpeg",
+                "enlace": "https://archive.org/details/fallensearchingf0000simp"
+            },
+            {
+                "id": "4",
+                "titulo": "Clothes, Clothes, Clothes. Music, Music, Music. Boys, Boys, Boys",
+                "autor": "Viv Albertine",
+                "descripcion": "Autobiografía de la guitarrista de The Slits, ofreciendo una perspectiva femenina del punk y post-punk.",
+                "imagen": "imagenes/Clothes, Clothes, Clothes. Music, Music, Music. Boys, Boys, Boys por Viv Albertine.jpg",
+                "enlace": "https://archive.org/details/clothesclothescl0000albe"
+            },
+            {
+                "id": "5",
+                "titulo": "The Dark Reign of Gothic Rock: In The Reptile House with The Sisters of Mercy, Bauhaus and The Cure",
+                "autor": "Dave Thompson",
+                "descripcion": "Aunque más centrado en el goth rock, es relevante para el post-punk.",
+                "imagen": "imagenes/The Dark Reign of Gothic Rock In The Reptile House with The Sisters of Mercy, Bauhaus and The Cure por Dave Thompson.jpg",
+                "enlace": "https://openlibrary.org/books/OL8762584M/The_Dark_Reign_of_Gothic_Rock"
+            },
+            {
+                "id": "6",
+                "titulo": "Networks of Sound, Style and Subversion: The Punk and Post-Punk Worlds of Manchester, London, Liverpool and Sheffield, 1975-80",
+                "autor": "Nick Crossley",
+                "descripcion": "Analiza cómo se desarrollaron las escenas musicales de estas ciudades.",
+                "imagen": "imagenes/Networks of Sound, Style and Subversion The Punk and Post-Punk Worlds of Manchester, London, Liverpool and Sheffield, 1975-80 por Nick Crossley.jpeg",
+                "enlace": "https://www.jstor.org/stable/j.ctt18mvkkz"
+            },
+            {
+                "id": "7",
+                "titulo": "Please Kill Me: The Uncensored Oral History of Punk",
+                "autor": "Legs McNeil y Gillian McCain",
+                "descripcion": "Aunque enfocado en el punk, incluye la transición hacia el post-punk.",
+                "imagen": "imagenes/Please Kill Me The Uncensored Oral History of Punk por Legs McNeil y Gillian McCain.jpg",
+                "enlace": "https://archive.org/details/pleasekillmeunce00legs_0"
+            },
+            {
+                "id": "8",
+                "titulo": "Energy Flash: A Journey Through Rave Music and Dance Culture",
+                "autor": "Simon Reynolds",
+                "descripcion": "Aunque no exclusivamente post-punk, Reynolds discute la influencia del post-punk en la música dance.",
+                "imagen": "imagenes/Energy Flash A Journey Through Rave Music and Dance Culture por Simon Reynolds.jpg",
+                "enlace": "https://archive.org/details/energyflashjourn0000reyn_c4c7"
+            },
+            {
+                "id": "9",
+                "titulo": "La Distorsión Inteligente: Post-Hardcore, la reinvención del punk",
+                "autor": "Marcos Gendre",
+                "descripcion": "Un enfoque en la evolución del post-punk hacia el post-hardcore, con un enfoque en la escena norteamericana.",
+                "imagen": "imagenes/La Distorsión Inteligente Post-Hardcore, la reinvención del punk por Marcos Gendre.jpg",
+                "enlace": "https://www.amazon.com/-/es/distorsi%C3%B3n-inteligente-post-hardcore-reinvenci%C3%B3n-punk/dp/8415191871"
+            },
+            {
+                "id": "10",
+                "titulo": "Post Punk Diary: 1980-1982",
+                "autor": "George Gimarc",
+                "descripcion": "Un diario detallado de la música post-punk de esos años.",
+                "imagen": "imagenes/La Distorsión Inteligente Post-Hardcore, la reinvención del punk por Marcos Gendre.jpg",
+                "enlace": "https://archive.org/details/postpunkdiary19800gima"
+            },
+            {
+                "id": "11",
+                "titulo": "No Future: Punk, Politics and British Youth Culture, 1976-1984",
+                "autor": "Matthew Worley",
+                "descripcion": "Examina el punk y post-punk en el contexto social y político británico.",
+                "imagen": "imagenes/La Distorsión Inteligente Post-Hardcore, la reinvención del punk por Marcos Gendre.jpg",
+                "enlace": "https://www.amazon.com/No-Future-Politics-British-1976-1984/dp/1316625605"
+            },
+            {
+                "id": "12",
+                "titulo": "Rotten: No Irish, No Blacks, No Dogs",
+                "autor": "John Lydon",
+                "descripcion": "Aunque Lydon es más conocido por los Sex Pistols, su trabajo con PiL está dentro del post-punk.",
+                "imagen": "imagenes/La Distorsión Inteligente Post-Hardcore, la reinvención del punk por Marcos Gendre.jpg",
+                "enlace": "https://archive.org/details/rottennoirishnob0000unse"
+            },
+            {
+                "id": "13",
+                "titulo": "A Kiss Across the Ocean: Transatlantic Intimacies of British Post-Punk and US Latinidad",
+                "autor": "Richard T. Rodríguez",
+                "descripcion": "Explora la influencia del post-punk británico en la cultura latina en EE.UU.",
+                "imagen": "imagenes/A Kiss Across the Ocean Transatlantic Intimacies of British Post-Punk and US Latinidad por Richard T. Rodríguez.jpg",
+                "enlace": "https://www.amazon.com/Kiss-across-Ocean-Transatlantic-Intimacies/dp/1478018585"
+            },
+            {
+                "id": "14",
+                "titulo": "Totally Wired: Post-Punk Interviews and Overviews",
+                "autor": "Simon Reynolds",
+                "descripcion": "Una colección de entrevistas y ensayos sobre el post-punk.",
+                "imagen": "imagenes/Totally Wired Post-Punk Interviews and Overviews por Simon Reynolds.jpg",
+                "enlace": "https://www.amazon.com/Totally-Wired-Postpunk-Interviews-Overviews/dp/1593762860"
+            },
+            {
+                "id": "15",
+                "titulo": "The Sex Revolts: Gender, Rebellion, and Rock 'n' Roll",
+                "autor": "Simon Reynolds y Joy Press",
+                "descripcion": "Explora la relación entre género y la música rock, incluyendo el post-punk.",
+                "imagen": "imagenes/The Sex Revolts Gender, Rebellion, and Rock 'n' Roll por Simon Reynolds y Joy Press.jpg",
+                "enlace": "https://archive.org/details/sexrevoltsgender00reyn"
+            },
+            {
+                "id": "16",
+                "titulo": "Punk, ¿qué punk?",
+                "autor": "Tomás González Lezana",
+                "descripcion": "Un libro sobre la influencia del punk en España, que incluye el post-punk.",
+                "imagen": "imagenes/Punk, qué punk por Tomás González Lezana.jpg",
+                "enlace": "https://www.amazon.es/Punk-pero-Tom%C3%A1s-Gonz%C3%A1lez-Lezana/dp/8461766172#:~:text=%E2%80%9CPunk%2C%20Pero%20%C2%BFQu%C3%A9%20punk%3F%E2%80%9D%20es%20una%20gu%C3%ADa%20inevitablemente,sus%20inicios%20en%20los%2080%20hasta%20nuestros%20d%C3%ADas."
+            },
+            {
+                "id": "17",
+                "titulo": "New Wave & Post-Punk",
+                "autor": "Juan Manuel Corral",
+                "descripcion": "Una exploración de estos movimientos en el contexto de la música española.",
+                "imagen": "imagenes/New Wave & Post-Punk por Juan Manuel Corral.jpg",
+                "enlace": "https://latam.casadellibro.com/libro-new-wave--post-punk/9788496576704/1200224?msockid=28392c2b88a56f6d3f44393d89cf6e81"
+            },
+            {
+                "id": "18",
+                "titulo": "Punk Rock: An Oral History",
+                "autor": "John Robb",
+                "descripcion": "Aunque más centrado en el punk, aborda la evolución hacia el post-punk.",
+                "imagen": "imagenes/Punk Rock An Oral History por John Robb.jpg",
+                "enlace": "https://archive.org/details/Punk_Rock_9781604868388"
+            },
+            {
+                "id": "19",
+                "titulo": "Lonely Boy: Tales from a Sex Pistol",
+                "autor": "Steve Jones",
+                "descripcion": "Memoria de uno de los miembros originales de Sex Pistols, que tiene relevancia para el post-punk.",
+                "imagen": "imagenes/Lonely Boy Tales from a Sex Pistol por Steve Jones.jpg",
+                "enlace": "https://www.amazon.com.mx/Lonely-Boy-Tales-Sex-Pistol/dp/0306903172"
+            },
+            {
+                "id": "20",
+                "titulo": "Postpunk: Romper todo y empezar de nuevo",
+                "autor": "Simon Reynolds",
+                "descripcion": "Versiones en español de \"Rip It Up and Start Again\".",
+                "imagen": "imagenes/Postpunk Romper todo y empezar de nuevo por Simon Reynolds.jpg",
+                "enlace": "https://archive.org/details/reynolds-simon-postpunk"
+            }
+        ]
+    }
+]
