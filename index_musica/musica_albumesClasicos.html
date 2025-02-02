@@ -32,23 +32,6 @@
             margin-top: 10px; /* Añade espacio encima del texto */
         }
 
-        /* Estilo para el botón de regresar */
-        .back-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            background-color: black; /* Fondo negro */
-            color: red; /* Texto rojo */
-            border: 2px solid red; /* Borde rojo */
-            border-radius: 10px; /* Bordes redondeados */
-            font-family: 'Creepster', cursive; /* Tipografía vampírica */
-            text-shadow: 2px 2px 8px #FF0000; /* Sombra de texto roja */
-            box-shadow: 0 0 10px #FF0000; /* Sombra alrededor del botón */
-            cursor: pointer;
-        }
-
         .back-button:hover {
             background-color: red; /* Fondo rojo al pasar el mouse */
             color: black; /* Texto negro al pasar el mouse */
@@ -56,11 +39,14 @@
         }
 
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body>
-    <a href="#top" class="vampire-button">🔺 Regresar</a>
-    <button onclick="window.history.back();" class="back-button">Regresar</button>
+    <a href="javascript:void(0);" class="vampire-button" onclick="goBack()">🔺 Regresar</a>
     <main class="content">
         <section id="albums-influyentes">
             <h1>Álbumes de Post-Punk Influyentes</h1>
@@ -269,8 +255,8 @@
                     <a href="/postpunk/index_musica/index_musica_albumesClasicos_albumes/The Lords of the New Church - The Lords of the New Church (1982).html">The Lords of the New Church - The Lords of the New Church (1982)</a>
                 </li>
                 <li>
-                    <img src="postpunk/index_musica/index_musica_albumesClasicos_albumes/imagenes/Big Black - Songs About Fucking (1987).jpg" alt="Big Black - Songs About Fucking" class="thumbnail">
-                    <a href="postpunk/index_musica/index_musica_albumesClasicos_albumes/Big Black - Songs About Fucking (1987).html">Big Black - Songs About Fucking (1987)</a>
+                    <img src="/postpunk/index_musica/index_musica_albumesClasicos_albumes/imagenes/Big Black - Songs About Fucking (1987).jpg" alt="Big Black - Songs About Fucking" class="thumbnail">
+                    <a href="/postpunk/index_musica/index_musica_albumesClasicos_albumes/Big Black - Songs About Fucking (1987).html">Big Black - Songs About Fucking (1987)</a>
                 </li>
                 <li>
                     <img src="/postpunk/index_musica/index_musica_albumesClasicos_albumes/imagenes/The Sisters of Mercy - First and Last and Always (1985).jpg" alt="The Sisters of Mercy - First and Last and Always" class="thumbnail">
