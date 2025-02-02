@@ -11,16 +11,17 @@
             align-items: flex-start;
             margin-bottom: 20px;
             padding: 10px;
-            border-bottom: 2px solid #8b0000; /* Borde inferior rojo oscuro */
-            background-color: rgba(0, 0, 0, 0.8); /* Fondo negro translúcido */
-            border-radius: 10px; /* Bordes redondeados */
-            box-shadow: 0 4px 8px rgba(139, 0, 0, 0.7); /* Sombra roja oscura */
+            border-bottom: 2px solid #8b0000;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(139, 0, 0, 0.7);
         }
         .book-item img {
             max-width: 100px;
             margin-right: 20px;
-            border: 2px solid #8b0000; /* Borde rojo oscuro alrededor de la imagen */
-            border-radius: 5px; /* Bordes redondeados de la imagen */
+            border: 2px solid #8b0000;
+            border-radius: 5px;
+            cursor: pointer;
         }
         .book-item div {
             max-width: 600px;
@@ -28,55 +29,140 @@
         .book-item h3 {
             margin: 0;
             font-size: 1.2em;
-            color: #e0e0e0; /* Color del texto claro */
+            color: #e0e0e0;
         }
         .book-item p {
             margin: 5px 0;
-            color: #b0b0b0; /* Color del texto gris claro */
+            color: #b0b0b0;
+        }
+        /* Estilos para el modal vampírico */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #8b0000;
+            width: auto;
+            max-width: 90%;
+            background-color: #1c1c1c;
+            color: #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #8b0000;
+        }
+        .close {
+            color: #e0e0e0;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: #ff0000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .modal img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #8b0000;
+            border-radius: 10px;
+        }
+        .modal-description {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #b0b0b0;
         }
     </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body>
+    <a href="javascript:void(0);" class="vampire-button" onclick="goBack()">🔺 Regresar</a>
     <main class="content">
         <section id="libros-influyentes">
             <h1>Libros sobre Post-Punk</h1>
-            <div class="book-item">
-                <img src="libros/imagenes/rip_it_up_and_start_again.jpg" alt="Rip It Up and Start Again">
-                <div>
-                    <h3><a href="libros/rip_it_up_and_start_again.html">Rip It Up and Start Again: Postpunk 1978-1984</a> por Simon Reynolds</h3>
-                    <p>Un análisis profundo del movimiento post-punk en el Reino Unido.</p>
-                </div>
-            </div>
-            <div class="book-item">
-                <img src="libros/imagenes/unknown_pleasures.jpg" alt="Unknown Pleasures">
-                <div>
-                    <h3><a href="libros/unknown_pleasures.html">Unknown Pleasures: Inside Joy Division</a> por Peter Hook</h3>
-                    <p>Una mirada desde dentro de una de las bandas más influyentes del post-punk.</p>
-                </div>
-            </div>
-            <div class="book-item">
-                <img src="libros/imagenes/the_fallen.jpg" alt="The Fallen">
-                <div>
-                    <h3><a href="libros/the_fallen.html">The Fallen: Searching for the Missing Members of Joy Division</a> por Dave Thompson</h3>
-                    <p>Explora la historia de Joy Division desde una perspectiva más personal.</p>
-                </div>
-            </div>
-            <div class="book-item">
-                <img src="libros/imagenes/clothes_clothes_music_music_boys_boys_boys.jpg" alt="Clothes, Clothes, Clothes. Music, Music, Music. Boys, Boys, Boys">
-                <div>
-                    <h3><a href="libros/clothes_clothes_music_music_boys_boys_boys.html">Clothes, Clothes, Clothes. Music, Music, Music. Boys, Boys, Boys</a> por Viv Albertine</h3>
-                    <p>Autobiografía de la guitarrista de The Slits, ofreciendo una perspectiva femenina del punk y post-punk.</p>
-                </div>
-            </div>
-            <div class="book-item">
-                <img src="libros/imagenes/the_dark_reign_of_gothic_rock.jpg" alt="The Dark Reign of Gothic Rock">
-                <div>
-                    <h3><a href="libros/the_dark_reign_of_gothic_rock.html">The Dark Reign of Gothic Rock: In The Reptile House with The Sisters of Mercy, Bauhaus and The Cure</a> por Dave Thompson</h3>
-                    <p>Aunque más centrado en el goth rock, es relevante para el post-punk.</p>
-                </div>
-            </div>
-            <!-- Agrega más libros siguiendo el mismo formato -->
+            <!-- Aquí se insertarán dinámicamente los libros -->
         </section>
     </main>
+
+    <!-- El Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div id="modal-description" class="modal-description"></div>
+        </div>
+    </div>
+
+    <script>
+        const jsonUrl = 'libros.json';
+
+        async function cargarLibros() {
+            try {
+                const response = await fetch(jsonUrl);
+                const data = await response.json();
+                const librosData = data.find(item => item.name === "libros").data;
+                const librosSection = document.getElementById('libros-influyentes');
+
+                librosData.forEach(libro => {
+                    const libroHTML = `
+                        <div class="book-item">
+                            <img src="${libro.imagen}" alt="${libro.titulo}" onclick="openModal('${libro.imagen}', '${libro.descripcion}', '${libro.titulo}', '${libro.autor}', '${libro.enlace}')">
+                            <div>
+                                <h3><a href="${libro.enlace}">${libro.titulo}</a> por ${libro.autor}</h3>
+                                <p>${libro.descripcion}</p>
+                            </div>
+                        </div>
+                    `;
+                    librosSection.insertAdjacentHTML('beforeend', libroHTML);
+                });
+
+            } catch (error) {
+                console.error('Error al cargar los libros:', error);
+            }
+        }
+
+        function openModal(imagen, descripcion, titulo, autor, enlace) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("modal-image");
+            const modalDescription = document.getElementById("modal-description");
+
+            modal.style.display = "block";
+            modalImg.src = imagen;
+            modalDescription.innerHTML = `
+                <h2>${titulo}</h2>
+                <h3>por ${autor}</h3>
+                <p>${descripcion}</p>
+                <a href="${enlace}" target="_blank">Más información</a>
+            `;
+        }
+
+        const modal = document.getElementById("myModal");
+        const span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        window.onload = cargarLibros;
+    </script>
 </body>
 </html>
