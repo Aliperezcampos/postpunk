@@ -3,31 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escritores y Críticos de Post-Punk</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Autores de Post-Punk</title>
+    <link rel="stylesheet" href="/postpunk/style.css">
+    <style>
+        .author-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #8b0000;
+        }
+        .author-item img {
+            max-width: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .author-item img:hover {
+            transform: scale(1.05);
+        }
+        .author-item h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #ff0000;
+            text-shadow: 1px 1px 2px #8b0000;
+            font-family: 'Cinzel', serif;
+        }
+        .author-item p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+        }
+        .modal-content {
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #8b0000;
+            width: auto;
+            max-width: 60%;
+            background-color: #1c1c1c;
+            color: #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #8b0000;
+        }
+        .close {
+            color: #e0e0e0;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #ff0000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        #modal-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        #modal-description {
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        #modal-link {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            color: #ff0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #modal-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body>
+    <a href="javascript:void(0);" class="vampire-button" onclick="goBack()">🔺 Regresar</a>
     <main class="content">
-        <section id="autores-influyentes">
-            <h1>Escritores y Críticos de Post-Punk</h1>
-            <ul>
-                <li><a href="autores/simon_reynolds.html">Simon Reynolds</a> - Quizás el más conocido por su libro "Rip It Up and Start Again: Postpunk 1978-1984", Reynolds ha sido fundamental en la conceptualización y análisis del post-punk. También ha escrito sobre dance music, punk y otros géneros relacionados.</li>
-                <li><a href="autores/jon_savage.html">Jon Savage</a> - Autor de "England's Dreaming: Anarchy, Sex Pistols, Punk Rock, and Beyond", aunque más centrado en el punk, su trabajo atraviesa la transición al post-punk.</li>
-                <li><a href="autores/paul_morley.html">Paul Morley</a> - Escritor y crítico musical que escribió para NME durante el auge del post-punk, influyente en la cobertura de bandas como Joy Division.</li>
-                <li><a href="autores/viv_albertine.html">Viv Albertine</a> - Guitarrista de The Slits, su autobiografía "Clothes, Clothes, Clothes. Music, Music, Music. Boys, Boys, Boys" ofrece una perspectiva única del punk y post-punk desde la mirada de una mujer.</li>
-                <li><a href="autores/lester_bangs.html">Lester Bangs</a> - Crítico musical legendario cuya escritura tuvo un impacto en la forma de pensar sobre el punk y sus derivados, incluyendo el post-punk.</li>
-                <li><a href="autores/nick_kent.html">Nick Kent</a> - Escritor para NME que documentó la escena musical británica, incluyendo el post-punk, con un estilo muy particular.</li>
-                <li><a href="autores/ian_penman.html">Ian Penman</a> - Otro crítico de NME y The Face, conocido por sus escritos profundos y poéticos sobre la música de la era post-punk.</li>
-                <li><a href="autores/richard_meltzer.html">Richard Meltzer</a> - Aunque más conocido por el rock, su estilo de escritura influyó en cómo se abordó el punk y, por extensión, el post-punk.</li>
-                <li><a href="autores/greil_marcus.html">Greil Marcus</a> - Su libro "Lipstick Traces: A Secret History of the Twentieth Century" conecta el punk y el post-punk con corrientes culturales más amplias.</li>
-                <li><a href="autores/dave_thompson.html">Dave Thompson</a> - Ha escrito varios libros sobre bandas post-punk como Joy Division y The Sisters of Mercy, siendo una voz autorizada en la historia de estos movimientos.</li>
-                <li><a href="autores/peter_hook.html">Peter Hook</a> - Exmiembro de Joy Division y New Order, sus libros "Unknown Pleasures" y "Substance: Inside New Order" son memorias que ofrecen una visión interna del post-punk.</li>
-                <li><a href="autores/john_robb.html">John Robb</a> - Músico y periodista, autor de "Punk Rock: An Oral History" y "The Art of Darkness: The History of Goth", cubriendo aspectos del post-punk.</li>
-                <li><a href="autores/julian_cope.html">Julian Cope</a> - Conocido por sus libros sobre la música underground, incluyendo "Krautrocksampler" que, aunque no es sobre post-punk, influyó en cómo se entendieron los movimientos musicales experimentales.</li>
-                <li><a href="autores/mark_fisher.html">Mark Fisher</a> - Filósofo y crítico cultural cuyo trabajo en "Ghosts of My Life" y otros escritos analiza la estética post-punk dentro de un contexto de hauntología.</li>
-                <li><a href="autores/joy_press.html">Joy Press</a> - Co-autora de "The Sex Revolts: Gender, Rebellion, and Rock 'n' Roll" con Simon Reynolds, explorando la intersección de género con el punk y el post-punk.</li>
-            </ul>
+        <section id="autores-postpunk">
+            <h1>Autores de Post-Punk</h1>
+            <div id="autores-section">
+                <!-- Aquí se insertarán dinámicamente los autores -->
+            </div>
         </section>
     </main>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="" style="width: 100%; height: auto;">
+            <div id="modal-description"></div>
+            <a id="modal-link" href="" target="_blank">Más información</a>
+        </div>
+    </div>
+
+    <script>
+        async function cargarAutores(url) {
+            try {
+                const response = await fetch(url);
+                const autoresData = await response.json();
+                const autoresSection = document.getElementById('autores-section');
+
+                autoresData.forEach(autor => {
+                    const autorHTML = `
+                        <div class="author-item">
+                            <img src="${autor.imagen}" alt="Imagen de ${autor.autor}" onclick="openModal('${autor.imagen}', '${autor.descripcion}', '${autor.autor}', '${autor.enlace}')">
+                            <div>
+                                <h3>${autor.autor}</h3>
+                                <p>${autor.descripcion}</p>
+                                <a href="${autor.enlace}" target="_blank">Visitar sitio web</a>
+                            </div>
+                        </div>
+                    `;
+                    autoresSection.insertAdjacentHTML('beforeend', autorHTML);
+                });
+
+            } catch (error) {
+                console.error('Error al cargar los autores:', error);
+            }
+        }
+
+        function openModal(imagen, descripcion, autor, enlace) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("modal-image");
+            const modalDescription = document.getElementById("modal-description");
+            const modalLink = document.getElementById("modal-link");
+
+            modal.style.display = "block";
+            modalImg.src = imagen;
+            modalDescription.innerHTML = `<h2>${autor}</h2><p>${descripcion}</p>`;
+            modalLink.href = enlace;
+        }
+
+        const modal = document.getElementById("myModal");
+        const span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        cargarAutores('autores.json');
+    </script>
 </body>
 </html>
