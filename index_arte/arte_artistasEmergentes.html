@@ -3,49 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bandas Emergentes de Post-Punk</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Artistas Emergentes Post-Punk</title>
+    <link rel="stylesheet" href="/postpunk/style.css">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #bb0000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .artist-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .artist-item {
+            background-color: #1a1a1a;
+            color: #bb0000;
+            padding: 20px;
+            border: 1px solid #bb0000;
+            border-radius: 10px;
+            width: calc(100% - 40px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+
+        @media(min-width: 768px) {
+            .artist-item {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .artist-item {
+                width: calc(33.333% - 40px);
+            }
+        }
+
+        .artist-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .artist-item a {
+            color: #ff0000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .artist-item a:hover {
+            color: #bb0000;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #1a1a1a;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #bb0000;
+            width: 80%;
+            color: #bb0000;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #bb0000;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #ff0000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .music-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .music-links img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
 </head>
 <body>
-    <main class="content">
-        <section id="bandas-emergentes">
-            <h1>Bandas Emergentes de Post-Punk</h1>
-            
-            <h2>Internacionales:</h2>
-            <ul>
-                <li><a href="bandas/black_country_new_road.html">Black Country, New Road</a> - Una banda británica que ha redefinido el sonido post-punk con su complejidad musical.</li>
-                <li><a href="bandas/fontaines_dc.html">Fontaines D.C.</a> - Desde Irlanda, con un sonido que mezcla el post-punk con influencias literarias.</li>
-                <li><a href="bandas/idles.html">IDLES</a> - Aunque han avanzado mucho, siguen siendo una fuerza emergente con su enfoque político y enérgico.</li>
-                <li><a href="bandas/dry_cleaning.html">Dry Cleaning</a> - Reconocidos por su estilo hablado y letras introspectivas, una propuesta fresca en el post-punk.</li>
-                <li><a href="bandas/squid.html">Squid</a> - Su enfoque experimental y progresivo dentro del post-punk ha capturado la atención global.</li>
-                <li><a href="bandas/shame.html">shame</a> - Con un sonido agresivo y directo, son una de las bandas más destacadas del resurgimiento post-punk.</li>
-                <li><a href="bandas/the_murder_capital.html">The Murder Capital</a> - Ofrecen una visión oscura y melancólica del post-punk desde Irlanda.</li>
-                <li><a href="bandas/black_midi.html">Black Midi</a> - Su música desafía etiquetas, pero sus raíces post-punk son innegables.</li>
-                <li><a href="bandas/protomartyr.html">Protomartyr</a> - Con letras profundas y un sonido que evoluciona, siguen siendo una banda emergente de importancia.</li>
-                <li><a href="bandas/preoccupations.html">Preoccupations</a> - Su enfoque oscuro y experimental mantiene su relevancia en el género.</li>
-                <li><a href="bandas/gilla_band.html">Gilla Band</a> - Anteriormente Girl Band, su sonido ha evolucionado hacia una forma más caótica de post-punk.</li>
-                <li><a href="bandas/the_lounge_society.html">The Lounge Society</a> - Reviven el espíritu del post-punk clásico con un enfoque moderno.</li>
-                <li><a href="bandas/courting.html">Courting</a> - Con un enfoque lúdico y enérgico, aportan frescura al género desde Liverpool.</li>
-                <li><a href="bandas/legss.html">Legss</a> - Haciendo eco de las bandas post-punk británicas de antaño, son una fuerza emergente.</li>
-                <li><a href="bandas/do_nothing.html">Do Nothing</a> - Con letras sociales y un sonido distintivo, están ganando reconocimiento.</li>
-                <li><a href="bandas/the_cool_greenhouse.html">The Cool Greenhouse</a> - Mezclan post-punk con indie y pop para un sonido único.</li>
-                <li><a href="bandas/tv_priest.html">TV Priest</a> - Su debut mostró un post-punk con un enfoque crítico y político.</li>
-                <li><a href="bandas/yard_act.html">Yard Act</a> - Con letras satíricas y un giro moderno al post-punk, están en ascenso.</li>
-            </ul>
+    <div class="container">
+        <main>
+            <section id="artistas">
+                <h1>Artistas Emergentes</h1>
+                <div class="artist-container">
+                    <!-- Artist items will be inserted here -->
+                </div>
+            </section>
+        </main>
+    </div>
 
-            <h2>De México:</h2>
-            <ul>
-                <li><a href="bandas/acid_fader.html">Acid Fader</a> - Desde Monterrey, combinan post-punk con synthwave y darkwave para un sonido distintivo.</li>
-                <li><a href="bandas/nacromatic.html">Nacromatic</a> - Un proyecto solista que se desliza entre el post-punk, shoegaze y lo-fi rock, explorando sonidos oscuros.</li>
-                <li><a href="bandas/sombras_en_tiempos_oscuros.html">Sombras en Tiempos Oscuros</a> - Con influencias claras del post-punk clásico y una atmósfera melancólica.</li>
-                <li><a href="bandas/estrero.html">Estrero</a> - Un proyecto que mezcla varios estilos oscuros, incluyendo post-punk, con una experimentación sonora notable.</li>
-                <li><a href="bandas/convex_mirror.html">Convex Mirror</a> - Aunque más en el ámbito del coldwave y dream pop, sus raíces post-punk son evidentes.</li>
-                <li><a href="bandas/equinoxious.html">Equinoxious</a> - Traen un enfoque retrofuturista al post-punk, con influencias de música electrónica y poesía.</li>
-                <li><a href="bandas/puntos_tendal.html">Puntos Tendal</a> - Con un sonido que abraza el post-punk, han sido destacados por su concepto visual y musical.</li>
-                <li><a href="bandas/nosferatu.html">Nosferatu</a> - Aunque no es exclusivamente post-punk, su enfoque en la música oscura los coloca en esta escena.</li>
-                <li><a href="bandas/unperro_andaluz.html">Unperro Andaluz</a> - Su música refleja la vida urbana con un enfoque post-punk y grunge.</li>
-            </ul>
-        </section>
-    </main>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('json/artistas_emergentes.json')
+            .then(response => response.json())
+            .then(data => {
+                const artistContainer = document.querySelector('.artist-container');
+                data.artistas.forEach(artista => {
+                    const artistItem = document.createElement('div');
+                    artistItem.classList.add('artist-item');
+                    artistItem.innerHTML = `
+                        <h2>${artista.nombre}</h2>
+                        <p><strong>País:</strong> ${artista.pais}</p>
+                        <p>${artista.descripcion}</p>
+                        <img src="${artista.imagen}" alt="${artista.nombre}">
+                        <p><a href="${artista.enlace}" target="_blank">Más información</a></p>
+                        <div class="music-links">
+                            <a href="https://open.spotify.com/search/${encodeURIComponent(artista.nombre)}" target="_blank">
+                                <img src="/postpunk/icons/spotify.png" alt="Spotify">
+                            </a>
+                            <a href="https://music.youtube.com/search?q=${encodeURIComponent(artista.nombre)}" target="_blank">
+                                <img src="/postpunk/icons/youtube_music.png" alt="YouTube Music">
+                            </a>
+                        </div>
+                    `;
+                    artistItem.addEventListener('click', () => {
+                        showModal(artista);
+                    });
+                    artistContainer.appendChild(artistItem);
+                });
+            });
+
+        const modal = document.getElementById("myModal");
+        const modalBody = document.getElementById("modal-body");
+        const span = document.getElementsByClassName("close")[0];
+
+        function showModal(data) {
+            modalBody.innerHTML = `
+                <h2>${data.nombre}</h2>
+                <p>${data.descripcion}</p>
+                <img src="${data.imagen}" alt="${data.nombre}">
+                <p><a href="${data.enlace}" target="_blank">Más información</a></p>
+                <div class="music-links">
+                    <a href="https://open.spotify.com/search/${encodeURIComponent(data.nombre)}" target="_blank">
+                        <img src="/postpunk/icons/spotify.png" alt="Spotify">
+                    </a>
+                    <a href="https://music.youtube.com/search?q=${encodeURIComponent(data.nombre)}" target="_blank">
+                        <img src="/postpunk/icons/youtube_music.png" alt="YouTube Music">
+                    </a>
+                </div>
+            `;
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
