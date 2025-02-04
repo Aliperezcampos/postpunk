@@ -1,0 +1,46 @@
+{
+    "exposiciones": [
+      {
+        "nombre": "Punk. Its Traces in Contemporary Art",
+        "descripcion": "Esta exposición fue presentada en el MACBA (Museo de Arte Contemporáneo de Barcelona), CA2M (Madrid), ARTIUM (Vitoria), y el Museo Universitario del Chopo (México). Fue una muestra grande que exploraba cómo el punk ha influido en el arte contemporáneo.",
+        "imagen": "imagenes_expos/punk.jpg",
+        "enlace": "https://vein.es/punk-rastros-arte-contemporaneo/"
+      },
+      {
+        "nombre": "Post Punk: An Art Movement",
+        "descripcion": "Aunque no es una exposición específica, este título se ha utilizado para referirse a la colección de obras de arte influenciadas por el ethos y la estética del post-punk, con exposiciones en varias galerías y museos.",
+        "imagen": "imagenes_expos/postpunk.jpg",
+        "enlace": "https://www.chopo.unam.mx/exposiciones/PunkRastros.html"
+      },
+      {
+        "nombre": "Destroy: Punk Graphic Design in Britain",
+        "descripcion": "Organizada por el Museo Británico, esta exposición exploró el diseño gráfico del punk y post-punk, mostrando cómo la estética de estos movimientos influyó en la cultura visual.",
+        "imagen": "imagenes_expos/destroy.jpg",
+        "enlace": "https://www.designweek.co.uk/issues/5-february-1998/all-the-rage/"
+      },
+      {
+        "nombre": "Punk: Chaos to Couture",
+        "descripcion": "En el Museo Metropolitano de Arte de Nueva York, aunque más centrada en el punk, también destacó la influencia post-punk en la moda y el diseño.",
+        "imagen": "imagenes_expos/chaos.jpg",
+        "enlace": "https://www.metalocus.es/es/noticias/punk-chaos-couture"
+      },
+      {
+        "nombre": "The Art of Punk",
+        "descripcion": "Una exposición que viajó por diversas galerías en los Estados Unidos, mostrando arte relacionado con el punk y post-punk, incluyendo pósters, fotografías y otros trabajos visuales.",
+        "imagen": "imagenes_expos/art.jpg",
+        "enlace": "https://visualflood.com/article/history-of-art-punk-art"
+      },
+      {
+        "nombre": "Post-Punk Art & Fashion Exhibition",
+        "descripcion": "Eventos como este han sido organizados en diversas galerías de arte alrededor del mundo, celebrando la fusión de moda, arte y música post-punk.",
+        "imagen": "imagenes_expos/post.jpg",
+        "enlace": "https://spunkt.art/projects/in-a-post-world-post-punk-art-now/"
+      },
+      {
+        "nombre": "Punk, its traces in contemporary art",
+        "descripcion": "En ARTIUM, Centro Vasco de Arte Contemporáneo, exploró cómo el punk ha dejado su huella en el arte contemporáneo.",
+        "imagen": "imagenes_expos/traces.jpg",
+        "enlace": "https://www.macba.cat/en/exhibitions/punk-its-traces-in-contemporary-art/"
+      }
+    ]
+  }

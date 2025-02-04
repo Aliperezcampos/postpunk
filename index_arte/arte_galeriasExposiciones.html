@@ -3,33 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerías y Exposiciones de Post-Punk</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Galerías y Exposiciones Post-Punk</title>
+    <link rel="stylesheet" href="/postpunk/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Old+London&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alte+Schwabacher&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+        body {
+            background-color: #1a1a1a;
+            color: #bb0000;
+            font-family: 'Nosifer', cursive;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        h1, h2 {
+            font-family: 'Old London', cursive;
+        }
+
+        p {
+            font-family: 'Alte Schwabacher', cursive;
+        }
+
+        .gallery-container, .exhibition-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item, .exhibition-item {
+            background-color: #1a1a1a;
+            color: #bb0000;
+            padding: 20px;
+            border: 1px solid #bb0000;
+            border-radius: 10px;
+            width: calc(100% - 40px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+
+        @media(min-width: 768px) {
+            .gallery-item, .exhibition-item {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .gallery-item, .exhibition-item {
+                width: calc(33.333% - 40px);
+            }
+        }
+
+        .gallery-item img, .exhibition-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .gallery-item a, .exhibition-item a {
+            color: #ff0000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .gallery-item a:hover, .exhibition-item a:hover {
+            color: #bb0000;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #1a1a1a;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #bb0000;
+            width: 80%;
+            color: #bb0000;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #bb0000;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #ff0000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <main class="content">
-        <section id="galerias-influyentes">
-            <h1>Galerías y Exposiciones de Post-Punk</h1>
-            <h2>Galerías:</h2>
-            <ul>
-                <li><a href="galerias/abc_no_rio.html">ABC No Rio (Nueva York)</a> - Un espacio conocido por su asociación con la escena punk y post-punk desde 1980, ofreciendo un lugar para exposiciones de arte y actuaciones.</li>
-                <li><a href="galerias/the_kitchen.html">The Kitchen (Nueva York)</a> - Aunque no exclusivamente post-punk, ha sido un sitio clave para performances y exposiciones de arte que reflejan la estética y la energía del movimiento.</li>
-                <li><a href="galerias/ica_londres.html">Institute of Contemporary Arts (ICA) (Londres)</a> - Ha albergado exposiciones y eventos que intersectan con la cultura post-punk, especialmente en su enfoque en lo contemporáneo y experimental.</li>
-                <li><a href="galerias/galeria_del_chopo.html">Galería del Chopo (México DF)</a> - La exposición "Punk. Sus rastros en el arte contemporáneo" mostró cómo el punk y, por extensión, el post-punk han influido en el arte.</li>
-                <li><a href="galerias/centre_art_contemporain_geneve.html">Centre d'Art Contemporain Genève</a> - Ha tenido exposiciones que exploran la relación entre la música y el arte, incluyendo el impacto del post-punk.</li>
-            </ul>
+    <div class="container">
+        <main>
+            <section id="galerias">
+                <h1>Galerías</h1>
+                <div class="gallery-container">
+                    <!-- Gallery items will be inserted here -->
+                </div>
+            </section>
 
-            <h2>Exposiciones Notables:</h2>
-            <ul>
-                <li><a href="galerias/punk_traces_contemporary_art.html">"Punk. Its Traces in Contemporary Art"</a> - Esta exposición fue presentada en el MACBA (Museo de Arte Contemporáneo de Barcelona), CA2M (Madrid), ARTIUM (Vitoria), y el Museo Universitario del Chopo (México). Fue una muestra grande que exploraba cómo el punk ha influido en el arte contemporáneo.</li>
-                <li><a href="galerias/post_punk_art_movement.html">"Post Punk: An Art Movement"</a> - Aunque no es una exposición específica, este título se ha utilizado para referirse a la colección de obras de arte influenciadas por el ethos y la estética del post-punk, con exposiciones en varias galerías y museos.</li>
-                <li><a href="galerias/destroy_punk_graphic_design.html">"Destroy: Punk Graphic Design in Britain"</a> - Organizada por el Museo Británico, esta exposición exploró el diseño gráfico del punk y post-punk, mostrando cómo la estética de estos movimientos influyó en la cultura visual.</li>
-                <li><a href="galerias/punk_chaos_to_couture.html">"Punk: Chaos to Couture"</a> - En el Museo Metropolitano de Arte de Nueva York, aunque más centrada en el punk, también destacó la influencia post-punk en la moda y el diseño.</li>
-                <li><a href="galerias/the_art_of_punk.html">"The Art of Punk"</a> - Una exposición que viajó por diversas galerías en los Estados Unidos, mostrando arte relacionado con el punk y post-punk, incluyendo pósters, fotografías y otros trabajos visuales.</li>
-                <li><a href="galerias/post_punk_art_fashion_exhibition.html">"Post-Punk Art & Fashion Exhibition"</a> - Eventos como este han sido organizados en diversas galerías de arte alrededor del mundo, celebrando la fusión de moda, arte y música post-punk.</li>
-                <li><a href="galerias/punk_traces_contemporary_art_artium.html">"Punk, its traces in contemporary art" en ARTIUM</a>, Centro Vasco de Arte Contemporáneo, exploró cómo el punk ha dejado su huella en el arte contemporáneo.</li>
-            </ul>
-        </section>
-    </main>
+            <section id="exposiciones">
+                <h1>Exposiciones</h1>
+                <div class="exhibition-container">
+                    <!-- Exhibition items will be inserted here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('json/galerias.json')
+            .then(response => response.json())
+            .then(data => {
+                const galleryContainer = document.querySelector('.gallery-container');
+                data.galerias.forEach(galeria => {
+                    const galleryItem = document.createElement('div');
+                    galleryItem.classList.add('gallery-item');
+                    galleryItem.innerHTML = `
+                        <h2>${galeria.nombre}</h2>
+                        <p><strong>Ubicación:</strong> ${galeria.ubicacion}</p>
+                        <p>${galeria.descripcion}</p>
+                        <img src="${galeria.imagen}" alt="${galeria.nombre}">
+                        <p><a href="${galeria.enlace}" target="_blank">Más información</a></p>
+                    `;
+                    galleryItem.addEventListener('click', () => {
+                        showModal(galeria);
+                    });
+                    galleryContainer.appendChild(galleryItem);
+                });
+            });
+
+        fetch('json/exposiciones.json')
+            .then(response => response.json())
+            .then(data => {
+                const exhibitionContainer = document.querySelector('.exhibition-container');
+                data.exposiciones.forEach(exposicion => {
+                    const exhibitionItem = document.createElement('div');
+                    exhibitionItem.classList.add('exhibition-item');
+                    exhibitionItem.innerHTML = `
+                        <h2>${exposicion.nombre}</h2>
+                        <p>${exposicion.descripcion}</p>
+                        <img src="${exposicion.imagen}" alt="${exposicion.nombre}">
+                        <p><a href="${exposicion.enlace}" target="_blank">Más información</a></p>
+                    `;
+                    exhibitionItem.addEventListener('click', () => {
+                        showModal(exposicion);
+                    });
+                    exhibitionContainer.appendChild(exhibitionItem);
+                });
+            });
+
+        const modal = document.getElementById("myModal");
+        const modalBody = document.getElementById("modal-body");
+        const span = document.getElementsByClassName("close")[0];
+
+        function showModal(data) {
+            modalBody.innerHTML = `
+                <h2>${data.nombre}</h2>
+                <p>${data.descripcion}</p>
+                <img src="${data.imagen}" alt="${data.nombre}">
+                <p><a href="${data.enlace}" target="_blank">Más información</a></p>
+            `;
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
