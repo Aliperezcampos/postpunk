@@ -1,0 +1,179 @@
+{
+    "artistas": [
+      {
+        "nombre": "Black Country, New Road",
+        "descripcion": "Una banda británica que ha redefinido el sonido post-punk con su complejidad musical.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/black.jpg",
+        "enlace": "https://blackcountrynewroad.com/"
+      },
+      {
+        "nombre": "Fontaines D.C.",
+        "descripcion": "Desde Irlanda, con un sonido que mezcla el post-punk con influencias literarias.",
+        "pais": "Irlanda",
+        "imagen": "imagenes_emergentes/fontaines.jpg",
+        "enlace": "https://fontainesdc.com/"
+      },
+      {
+        "nombre": "IDLES",
+        "descripcion": "Aunque han avanzado mucho, siguen siendo una fuerza emergente con su enfoque político y enérgico.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/idles.jpg",
+        "enlace": "https://www.idlesband.com/"
+      },
+      {
+        "nombre": "Dry Cleaning",
+        "descripcion": "Reconocidos por su estilo hablado y letras introspectivas, una propuesta fresca en el post-punk.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/dry.jpg",
+        "enlace": "https://drycleaningband.com/"
+      },
+      {
+        "nombre": "Squid",
+        "descripcion": "Su enfoque experimental y progresivo dentro del post-punk ha capturado la atención global.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/squid.jpg",
+        "enlace": "https://squidband.uk/live"
+      },
+      {
+        "nombre": "shame",
+        "descripcion": "Con un sonido agresivo y directo, son una de las bandas más destacadas del resurgimiento post-punk.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/shame.jpg",
+        "enlace": "https://shame.world/"
+      },
+      {
+        "nombre": "The Murder Capital",
+        "descripcion": "Ofrecen una visión oscura y melancólica del post-punk desde Irlanda.",
+        "pais": "Irlanda",
+        "imagen": "imagenes_emergentes/capital.jpg",
+        "enlace": "https://themurdercapital.com/"
+      },
+      {
+        "nombre": "Black Midi",
+        "descripcion": "Su música desafía etiquetas, pero sus raíces post-punk son innegables.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/midi.jpg",
+        "enlace": "https://es.wikipedia.org/wiki/Black_Midi"
+      },
+      {
+        "nombre": "Protomartyr",
+        "descripcion": "Con letras profundas y un sonido que evoluciona, siguen siendo una banda emergente de importancia.",
+        "pais": "Estados Unidos",
+        "imagen": "imagenes_emergentes/proto.jpg",
+        "enlace": "https://protomartyrband.com/"
+      },
+      {
+        "nombre": "Preoccupations",
+        "descripcion": "Su enfoque oscuro y experimental mantiene su relevancia en el género.",
+        "pais": "Canadá",
+        "imagen": "imagenes_emergentes/preoc.jpg",
+        "enlace": "https://preoccupations.ca/"
+      },
+      {
+        "nombre": "Gilla Band",
+        "descripcion": "Anteriormente Girl Band, su sonido ha evolucionado hacia una forma más caótica de post-punk.",
+        "pais": "Irlanda",
+        "imagen": "imagenes_emergentes/gilla.jpg",
+        "enlace": "https://gillaband.com/"
+      },
+      {
+        "nombre": "The Lounge Society",
+        "descripcion": "Reviven el espíritu del post-punk clásico con un enfoque moderno.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/lounge.jpg",
+        "enlace": "https://www.facebook.com/theloungesociety/"
+      },
+      {
+        "nombre": "Courting",
+        "descripcion": "Con un enfoque lúdico y enérgico, aportan frescura al género desde Liverpool.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/courting.jpg",
+        "enlace": "https://courtingband.com/Home-2"
+      },
+      {
+        "nombre": "Legss",
+        "descripcion": "Haciendo eco de las bandas post-punk británicas de antaño, son una fuerza emergente.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/legss.jpg",
+        "enlace": "https://www.loudandquiet.com/interview/meet-legss-an-experimental-london-band-in-conflict-with-the-capital/"
+      },
+      {
+        "nombre": "Do Nothing",
+        "descripcion": "Con letras sociales y un sonido distintivo, están ganando reconocimiento.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/nothing.jpg",
+        "enlace": "https://donothingband.com/"
+      },
+      {
+        "nombre": "The Cool Greenhouse",
+        "descripcion": "Mezclan post-punk con indie y pop para un sonido único.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/cool.jpg",
+        "enlace": "https://thecoolgreenhouse.bandcamp.com/album/the-cool-greenhouse-album"
+      },
+      {
+        "nombre": "TV Priest",
+        "descripcion": "Su debut mostró un post-punk con un enfoque crítico y político.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/tv.jpg",
+        "enlace": "https://www.tvpriest.com/"
+      },
+      {
+        "nombre": "Yard Act",
+        "descripcion": "Con letras satíricas y un giro moderno al post-punk, están en ascenso.",
+        "pais": "Reino Unido",
+        "imagen": "imagenes_emergentes/yard.jpg",
+        "enlace": "uhttps://www.yardactors.com/"
+      },
+      {
+        "nombre": "Acid Fader",
+        "descripcion": "Desde Monterrey, combinan post-punk con synthwave y darkwave para un sonido distintivo.",
+        "pais": "México",
+        "imagen": "url_de_la_imagen_acid_fader",
+        "enlace": "url_del_enlace_acid_fader"
+      },
+      {
+        "nombre": "Nacromatic",
+        "descripcion": "Un proyecto solista que se desliza entre el post-punk, shoegaze y lo-fi rock, explorando sonidos oscuros.",
+        "pais": "México",
+        "imagen": "url_de_la_imagen_nacromatic",
+        "enlace": "url_del_enlace_nacromatic"
+      },
+      {
+        "nombre": "Sombras en Tiempos Oscuros",
+        "descripcion": "Con influencias claras del post-punk clásico y una atmósfera melancólica.",
+        "pais": "México",
+        "imagen": "url_de_la_imagen_sombras_en_tiempos_oscuros",
+        "enlace": "url_del_enlace_sombras_en_tiempos_oscuros"
+      },
+      {
+        "nombre": "Estrero",
+        "descripcion": "Un proyecto que mezcla varios estilos oscuros, incluyendo post-punk, con una experimentación sonora notable.",
+        "pais": "México",
+        "imagen": "imagenes_emergentes/estrero.jpg",
+        "enlace": "https://www.instagram.com/estrero__/"
+      },
+      {
+        "nombre": "Convex Mirror",
+        "descripcion": "Aunque más en el ámbito del coldwave y dream pop, sus raíces post-punk son evidentes.",
+        "pais": "México",
+        "imagen": "imagenes_emergentes/espejo.jpg",
+        "enlace": "https://espejoconvexo.bandcamp.com/music"
+      },
+      {
+        "nombre": "Equinoxious",
+        "descripcion": "Traen un enfoque retrofuturista al post-punk, con influencias de música electrónica y poesía.",
+        "pais": "México",
+        "imagen": "imagenes_emergentes/equinox.jpg",
+        "enlace": "https://equinoxious.bandcamp.com/"
+      },
+      {
+        "nombre": "Unperro Andaluz",
+        "descripcion": "Su música refleja la vida urbana con un enfoque post-punk y grunge.",
+        "pais": "México",
+        "imagen": "imagenes_emergentes/perro.jpg",
+        "enlace": "https://www.instagram.com/unperroperroandaluz/"
+      }
+    ]
+  }
