@@ -1,91 +1,91 @@
 [
     {
-        "autor": "Simon Reynolds",
+        "nombre": "Simon Reynolds",
         "descripcion": "Quizás el más conocido por su libro 'Rip It Up and Start Again: Postpunk 1978-1984', Reynolds ha sido fundamental en la conceptualización y análisis del post-punk. También ha escrito sobre dance music, punk y otros géneros relacionados.",
         "imagen": "imagenes_autores/simon.jpg",
         "enlace": "https://es.wikipedia.org/wiki/Simon_Reynolds"
     },
     {
-        "autor": "Jon Savage",
-        "descripcion": "Autor de 'England's Dreaming: Anarchy, Sex Pistols, Punk Rock, and Beyond', aunque más centrado en el punk, su trabajo atraviesa la transición al post-punk.",
+        "nombre": "Jon Savage",
+        "descripcion": "nombre de 'England's Dreaming: Anarchy, Sex Pistols, Punk Rock, and Beyond', aunque más centrado en el punk, su trabajo atraviesa la transición al post-punk.",
         "imagen": "imagenes_autores/jon.jpg",
         "enlace": "https://en.wikipedia.org/wiki/Jon_Savage"
     },
     {
-        "autor": "Paul Morley",
+        "nombre": "Paul Morley",
         "descripcion": "Escritor y crítico musical que escribió para NME durante el auge del post-punk, influyente en la cobertura de bandas como Joy Division.",
         "imagen": "imagenes_autores/christopher.jpg",
         "enlace": "https://es.wikipedia.org/wiki/Paul_Morley"
     },
     {
-        "autor": "Viv Albertine",
+        "nombre": "Viv Albertine",
         "descripcion": "Guitarrista de The Slits, su autobiografía 'Clothes, Clothes, Clothes. Music, Music, Music. Boys, Boys, Boys' ofrece una perspectiva única del punk y post-punk desde la mirada de una mujer.",
         "imagen": "imagenes_autores/viv.jpg",
         "enlace": "https://es.wikipedia.org/wiki/Viv_Albertine"
     },
     {
-        "autor": "Lester Bangs",
+        "nombre": "Lester Bangs",
         "descripcion": "Crítico musical legendario cuya escritura tuvo un impacto en la forma de pensar sobre el punk y sus derivados, incluyendo el post-punk.",
         "imagen": "imagenes_autores/lester.jpg",
         "enlace": "https://en.wikipedia.org/wiki/Lester_Bangs"
     },
     {
-        "autor": "Nick Kent",
+        "nombre": "Nick Kent",
         "descripcion": "Escritor para NME que documentó la escena musical británica, incluyendo el post-punk, con un estilo muy particular.",
         "imagen": "imagenes_autores/nick.jpg",
         "enlace": "https://es.wikipedia.org/wiki/Nick_Kent"
     },
     {
-        "autor": "Ian Penman",
+        "nombre": "Ian Penman",
         "descripcion": "Otro crítico de NME y The Face, conocido por sus escritos profundos y poéticos sobre la música de la era post-punk.",
         "imagen": "imagenes_autores/ian.jpg",
         "enlace": "https://en.wikipedia.org/wiki/Ian_Penman"
     },
     {
-        "autor": "Richard Meltzer",
+        "nombre": "Richard Meltzer",
         "descripcion": "Aunque más conocido por el rock, su estilo de escritura influyó en cómo se abordó el punk y, por extensión, el post-punk.",
         "imagen": "imagenes_autores/richard.jpg",
         "enlace": "https://en.wikipedia.org/wiki/Richard_Meltzer"
     },
     {
-        "autor": "Greil Marcus",
+        "nombre": "Greil Marcus",
         "descripcion": "Su libro 'Lipstick Traces: A Secret History of the Twentieth Century' conecta el punk y el post-punk con corrientes culturales más amplias.",
         "imagen": "imagenes_autores/greil.jpg",
         "enlace": "https://es.wikipedia.org/wiki/Greil_Marcus"
     },
     {
-        "autor": "Dave Thompson",
-        "descripcion": "Ha escrito varios libros sobre bandas post-punk como Joy Division y The Sisters of Mercy, siendo una voz autorizada en la historia de estos movimientos.",
+        "nombre": "Dave Thompson",
+        "descripcion": "Ha escrito varios libros sobre bandas post-punk como Joy Division y The Sisters of Mercy, siendo una voz nombreizada en la historia de estos movimientos.",
         "imagen": "imagenes_autores/dave.jpg",
         "enlace": "https://en.wikipedia.org/wiki/Dave_Thompson_(author)"
     },
     {
-        "autor": "Peter Hook",
+        "nombre": "Peter Hook",
         "descripcion": "Exmiembro de Joy Division y New Order, sus libros 'Unknown Pleasures' y 'Substance: Inside New Order' son memorias que ofrecen una visión interna del post-punk.",
         "imagen": "imagenes_autores/peter.jpg",
         "enlace": "https://es.wikipedia.org/wiki/Peter_Hook"
     },
     {
-        "autor": "John Robb",
-        "descripcion": "Músico y periodista, autor de 'Punk Rock: An Oral History' y 'The Art of Darkness: The History of Goth', cubriendo aspectos del post-punk.",
+        "nombre": "John Robb",
+        "descripcion": "Músico y periodista, nombre de 'Punk Rock: An Oral History' y 'The Art of Darkness: The History of Goth', cubriendo aspectos del post-punk.",
         "imagen": "imagenes_autores/john.jpg",
         "enlace": "https://en.wikipedia.org/wiki/John_Robb_(musician)"
     },
     {
-        "autor": "Julian Cope",
+        "nombre": "Julian Cope",
         "descripcion": "Conocido por sus libros sobre la música underground, incluyendo 'Krautrocksampler' que, aunque no es sobre post-punk, influyó en cómo se entendieron los movimientos musicales experimentales.",
         "imagen": "imagenes_autores/julian.jpg",
         "enlace": "https://es.wikipedia.org/wiki/Julian_Cope"
     },
     {
-        "autor": "Mark Fisher",
+        "nombre": "Mark Fisher",
         "descripcion": "Filósofo y crítico cultural cuyo trabajo en 'Ghosts of My Life' y otros escritos analiza la estética post-punk dentro de un contexto de hauntología.",
         "imagen": "imagenes_autores/mark.jpg",
         "enlace": "https://es.wikipedia.org/wiki/Mark_Fisher_(te%C3%B3rico)"
     },
     {
-        "autor": "Joy Press",
-        "descripcion": "Co-autora de 'The Sex Revolts: Gender, Rebellion, and Rock 'n' Roll' con Simon Reynolds, explorando la intersección de género con el punk y el post-punk.",
+        "nombre": "Joy Press",
+        "descripcion": "Co-nombrea de 'The Sex Revolts: Gender, Rebellion, and Rock 'n' Roll' con Simon Reynolds, explorando la intersección de género con el punk y el post-punk.",
         "imagen": "imagenes_autores/joy.jpg",
         "enlace": "https://es.wikipedia.org/wiki/Joy_Press"
     }

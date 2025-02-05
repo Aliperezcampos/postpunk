@@ -3,79 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libros sobre Post-Punk</title>
+    <title>Libros Recomendados sobre Post-Punk</title>
     <link rel="stylesheet" href="/postpunk/style.css">
     <style>
-        .book-item {
+        body {
+            background-color: #000000;
+            color: #bb0000;
+            margin: 0;
+            padding: 0;
             display: flex;
-            align-items: flex-start;
-            margin-bottom: 20px;
-            padding: 10px;
-            border-bottom: 2px solid #8b0000;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(139, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
         }
-        .book-item img {
-            max-width: 100px;
-            margin-right: 20px;
-            border: 2px solid #8b0000;
-            border-radius: 5px;
+
+        .content {
+            width: 90%;
+            margin: auto;
+        }
+
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .book-item {
+            background-color: #000000;
+            color: #bb0000;
+            padding: 20px;
+            border: 3px solid #bb0000;
+            border-radius: 10px;
+            width: calc(100% - 40px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
             cursor: pointer;
         }
-        .book-item div {
-            max-width: 600px;
+
+        @media(min-width: 768px) {
+            .book-item {
+                width: calc(50% - 40px);
+            }
         }
-        .book-item h3 {
-            margin: 0;
-            font-size: 1.2em;
-            color: #e0e0e0;
+
+        @media(min-width: 1024px) {
+            .book-item {
+                width: calc(33.333% - 40px);
+            }
         }
-        .book-item p {
-            margin: 5px 0;
-            color: #b0b0b0;
+
+        .book-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
-        /* Estilos para el modal vampírico */
+
+        .book-item a {
+            color: #ff0000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .book-item a:hover {
+            color: #bb0000;
+        }
+
         .modal {
             display: none;
             position: fixed;
-            z-index: 1;
+            z-index: 1001;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
             overflow: auto;
             background-color: rgba(0, 0, 0, 0.9);
+            padding-top: 60px;
         }
+
         .modal-content {
-            margin: 10% auto;
+            background-color: #140225; 
+            margin: 5% auto;
             padding: 20px;
-            border: 1px solid #8b0000;
-            width: auto;
-            max-width: 90%;
-            background-color: #1c1c1c;
-            color: #e0e0e0;
+            border: 3px solid #bb0000;
+            width: 90%;
+            max-width: 600px;
+            color: #bb0000;
             border-radius: 10px;
-            box-shadow: 0 0 10px #8b0000;
         }
+
         .close {
-            color: #e0e0e0;
+            color: #bb0000;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
+
         .close:hover,
         .close:focus {
             color: #ff0000;
             text-decoration: none;
             cursor: pointer;
         }
+
         .modal img {
             width: 100%;
             height: auto;
             border: 2px solid #8b0000;
             border-radius: 10px;
         }
+
         .modal-description {
             margin-top: 20px;
             font-size: 1.1em;
@@ -93,7 +132,9 @@
     <main class="content">
         <section id="libros-influyentes">
             <h1>Libros sobre Post-Punk</h1>
-            <!-- Aquí se insertarán dinámicamente los libros -->
+            <div class="book-container">
+                <!-- Aquí se insertarán dinámicamente los libros -->
+            </div>
         </section>
     </main>
 
@@ -107,50 +148,43 @@
     </div>
 
     <script>
-        const jsonUrl = 'libros.json';
+        const jsonUrl = 'json/libros.json';
 
-        async function cargarLibros() {
-            try {
-                const response = await fetch(jsonUrl);
-                const data = await response.json();
-                const librosData = data.find(item => item.name === "libros").data;
-                const librosSection = document.getElementById('libros-influyentes');
-
-                librosData.forEach(libro => {
-                    const libroHTML = `
-                        <div class="book-item">
-                            <img src="${libro.imagen}" alt="${libro.titulo}" onclick="openModal('${libro.imagen}', '${libro.descripcion}', '${libro.titulo}', '${libro.autor}', '${libro.enlace}')">
-                            <div>
-                                <h3><a href="${libro.enlace}">${libro.titulo}</a> por ${libro.autor}</h3>
-                                <p>${libro.descripcion}</p>
-                            </div>
-                        </div>
+        fetch(jsonUrl)
+            .then(response => response.json())
+            .then(data => {
+                const bookContainer = document.querySelector('.book-container');
+                data.forEach(libro => {
+                    const bookItem = document.createElement('div');
+                    bookItem.classList.add('book-item');
+                    bookItem.innerHTML = `
+                        <h2>${libro.titulo}</h2>
+                        <p><strong>Autor:</strong> ${libro.autor}</p>
+                        <img src="${libro.imagen}" alt="${libro.titulo}">
+                        <p><a href="${libro.enlace}" target="_blank">Más información</a></p>
                     `;
-                    librosSection.insertAdjacentHTML('beforeend', libroHTML);
+                    bookItem.addEventListener('click', () => {
+                        showModal(libro);
+                    });
+                    bookContainer.appendChild(bookItem);
                 });
-
-            } catch (error) {
-                console.error('Error al cargar los libros:', error);
-            }
-        }
-
-        function openModal(imagen, descripcion, titulo, autor, enlace) {
-            const modal = document.getElementById("myModal");
-            const modalImg = document.getElementById("modal-image");
-            const modalDescription = document.getElementById("modal-description");
-
-            modal.style.display = "block";
-            modalImg.src = imagen;
-            modalDescription.innerHTML = `
-                <h2>${titulo}</h2>
-                <h3>por ${autor}</h3>
-                <p>${descripcion}</p>
-                <a href="${enlace}" target="_blank">Más información</a>
-            `;
-        }
+            });
 
         const modal = document.getElementById("myModal");
+        const modalImage = document.getElementById("modal-image");
+        const modalDescription = document.getElementById("modal-description");
         const span = document.getElementsByClassName("close")[0];
+
+        function showModal(libro) {
+            modalImage.src = libro.imagen;
+            modalDescription.innerHTML = `
+                <h2>${libro.titulo}</h2>
+                <p><strong>Autor:</strong> ${libro.autor}</p>
+                <p>${libro.descripcion}</p>
+                <p><a href="${libro.enlace}" target="_blank">Más información</a></p>
+            `;
+            modal.style.display = "block";
+        }
 
         span.onclick = function() {
             modal.style.display = "none";
@@ -161,8 +195,6 @@
                 modal.style.display = "none";
             }
         }
-
-        window.onload = cargarLibros;
     </script>
 </body>
 </html>

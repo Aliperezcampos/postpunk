@@ -6,64 +6,119 @@
     <title>Revistas y Fanzines sobre Post-Punk</title>
     <link rel="stylesheet" href="/postpunk/style.css">
     <style>
-        .publication-item {
+        body {
+            background-color: #000000;
+            color: #bb0000;
+            margin: 0;
+            padding: 0;
             display: flex;
-            align-items: flex-start;
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #8b0000; /* Borde inferior rojo oscuro */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
         }
-        .publication-item img {
-            max-width: 100px;
-            margin-right: 20px;
-            border-radius: 5px;
+
+        .content {
+            width: 90%;
+            margin: auto;
+        }
+
+        .publication-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .publication-item {
+            background-color: #000000;
+            color: #bb0000;
+            padding: 20px;
+            border: 3px solid #bb0000;
+            border-radius: 10px;
+            width: calc(100% - 40px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
             cursor: pointer;
         }
-        .publication-item h3 {
-            margin: 0;
-            font-size: 1.5em;
-            color: #ff0000; /* Color rojo sangre */
-            text-shadow: 1px 1px 2px #8b0000; /* Sombra roja oscura */
-            font-family: 'Cinzel', serif; /* Fuente estilo gótico */
+
+        @media(min-width: 768px) {
+            .publication-item {
+                width: calc(50% - 40px);
+            }
         }
-        .publication-item p {
-            margin: 5px 0;
-            color: #666;
+
+        @media(min-width: 1024px) {
+            .publication-item {
+                width: calc(33.333% - 40px);
+            }
         }
-        /* Estilos para el modal */
+
+        .publication-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .publication-item a {
+            color: #ff0000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .publication-item a:hover {
+            color: #bb0000;
+        }
+
         .modal {
             display: none;
             position: fixed;
-            z-index: 1;
+            z-index: 1001;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
             overflow: auto;
             background-color: rgba(0, 0, 0, 0.9);
+            padding-top: 60px;
         }
+
         .modal-content {
-            margin: 10% auto;
+            background-color: #140225;
+            margin: 5% auto;
             padding: 20px;
-            border: 1px solid #8b0000;
-            width: auto;
-            max-width: 80%;
-            background-color: #1c1c1c;
-            color: #e0e0e0;
+            border: 3px solid #bb0000;
+            width: 90%;
+            max-width: 600px;
+            color: #bb0000;
             border-radius: 10px;
-            box-shadow: 0 0 10px #8b0000;
         }
+
         .close {
-            color: #e0e0e0;
+            color: #bb0000;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
+
         .close:hover,
         .close:focus {
             color: #ff0000;
             text-decoration: none;
             cursor: pointer;
+        }
+
+        .modal img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #8b0000;
+            border-radius: 10px;
+        }
+
+        .modal-description {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #b0b0b0;
         }
     </style>
     <script>
@@ -79,12 +134,12 @@
             <h1>Revistas y Fanzines sobre Post-Punk</h1>
             
             <h2>Revistas:</h2>
-            <div id="revistas-section">
+            <div id="revistas-section" class="publication-container">
                 <!-- Aquí se insertarán dinámicamente las revistas -->
             </div>
 
             <h2>Fanzines:</h2>
-            <div id="fanzines-section">
+            <div id="fanzines-section" class="publication-container">
                 <!-- Aquí se insertarán dinámicamente los fanzines -->
             </div>
         </section>
@@ -94,67 +149,83 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img id="modal-image" src="" alt="" style="width: 100%; height: auto;">
-            <div id="modal-description"></div>
+            <img id="modal-image" src="" alt="">
+            <div id="modal-description" class="modal-description"></div>
             <a id="modal-link" href="" target="_blank" style="color: #ff0000;">Más información</a>
         </div>
     </div>
 
     <script>
-        async function cargarPublicaciones(url, sectionId) {
-            try {
-                const response = await fetch(url);
-                const data = await response.json();
-                const publicacionesData = data.data;
-                const publicacionesSection = document.getElementById(sectionId);
-
-                publicacionesData.forEach(publicacion => {
-                    const publicacionHTML = `
-                        <div class="publication-item">
-                            <img src="${publicacion.imagen}" alt="Portada de ${publicacion.titulo}" onclick="openModal('${publicacion.imagen}', '${publicacion.descripcion}', '${publicacion.titulo}', '${publicacion.enlace}')">
-                            <div>
-                                <h3>${publicacion.titulo}</h3>
-                                <p>${publicacion.descripcion}</p>
-                                <a href="${publicacion.enlace}" target="_blank">Visitar sitio web</a>
-                            </div>
-                        </div>
+        const revistasUrl = 'json/revistas.json';
+        const fanzinesUrl = 'json/fanzines.json';
+    
+        // Fetch revistas
+        fetch(revistasUrl)
+            .then(response => response.json())
+            .then(data => {
+                const revistasContainer = document.querySelector('#revistas-section');
+                data.forEach(revista => {
+                    const revistaItem = document.createElement('div');
+                    revistaItem.classList.add('publication-item');
+                    revistaItem.innerHTML = `
+                        <h2>${revista.titulo}</h2>
+                        <p>${revista.descripcion}</p>
+                        <img src="${revista.imagen}" alt="${revista.titulo}">
+                        <p><a href="${revista.enlace}" target="_blank">Más información</a></p>
                     `;
-                    publicacionesSection.insertAdjacentHTML('beforeend', publicacionHTML);
+                    revistaItem.addEventListener('click', () => {
+                        showModal(revista);
+                    });
+                    revistasContainer.appendChild(revistaItem);
                 });
-
-            } catch (error) {
-                console.error('Error al cargar las publicaciones:', error);
-            }
-        }
-
-        function openModal(imagen, descripcion, titulo, enlace) {
-            const modal = document.getElementById("myModal");
-            const modalImg = document.getElementById("modal-image");
-            const modalDescription = document.getElementById("modal-description");
-            const modalLink = document.getElementById("modal-link");
-
-            modal.style.display = "block";
-            modalImg.src = imagen;
-            modalDescription.innerHTML = `<h2>${titulo}</h2><p>${descripcion}</p>`;
-            modalLink.href = enlace;
-        }
-
+            });
+    
+        // Fetch fanzines
+        fetch(fanzinesUrl)
+            .then(response => response.json())
+            .then(data => {
+                const fanzinesContainer = document.querySelector('#fanzines-section');
+                data.forEach(fanzine => {
+                    const fanzineItem = document.createElement('div');
+                    fanzineItem.classList.add('publication-item');
+                    fanzineItem.innerHTML = `
+                        <h2>${fanzine.titulo}</h2>
+                        <p>${fanzine.descripcion}</p>
+                        <img src="${fanzine.imagen}" alt="${fanzine.titulo}">
+                        <p><a href="${fanzine.enlace}" target="_blank">Más información</a></p>
+                    `;
+                    fanzineItem.addEventListener('click', () => {
+                        showModal(fanzine);
+                    });
+                    fanzinesContainer.appendChild(fanzineItem);
+                });
+            });
+    
         const modal = document.getElementById("myModal");
+        const modalImage = document.getElementById("modal-image");
+        const modalDescription = document.getElementById("modal-description");
         const span = document.getElementsByClassName("close")[0];
-
+    
+        function showModal(item) {
+            modalImage.src = item.imagen;
+            modalDescription.innerHTML = `
+                <h2>${item.titulo}</h2>
+                <p>${item.descripcion}</p>
+                <p><a href="${item.enlace}" target="_blank">Más información</a></p>
+            `;
+            modal.style.display = "block";
+        }
+    
         span.onclick = function() {
             modal.style.display = "none";
         }
-
+    
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
         }
-
-        // Cargar las revistas y fanzines
-        cargarPublicaciones('revistas.json', 'revistas-section');
-        cargarPublicaciones('fanzines.json', 'fanzines-section');
     </script>
+    
 </body>
 </html>

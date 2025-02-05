@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/postpunk/style.css">
     <style>
         body {
-            background-color: #1a1a1a;
+            background-color: #000000;
             color: #bb0000;
             margin: 0;
             padding: 0;
@@ -15,6 +15,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            font-family: Arial, sans-serif;
         }
 
         .container {
@@ -86,8 +87,9 @@
             background-color: #1a1a1a;
             margin: 5% auto;
             padding: 20px;
-            border: 1px solid #bb0000;
-            width: 80%;
+            border: 3px solid #bb0000;
+            width: 90%;
+            max-width: 600px;
             color: #bb0000;
             border-radius: 10px;
         }
@@ -106,6 +108,19 @@
             cursor: pointer;
         }
 
+        .modal img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #8b0000;
+            border-radius: 10px;
+        }
+
+        .modal-description {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #b0b0b0;
+        }
+
         .music-links {
             display: flex;
             gap: 10px;
@@ -117,8 +132,14 @@
             height: 24px;
         }
     </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body>
+    <a href="javascript:void(0);" class="vampire-button" onclick="goBack()">🔺 Regresar</a>
     <div class="container">
         <main>
             <section id="artistas">
