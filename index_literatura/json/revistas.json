@@ -1,0 +1,38 @@
+[
+    {
+        "titulo": "Sounds",
+        "descripcion": "Aunque ya no existe, fue una de las revistas más influyentes en la cobertura del post-punk en el Reino Unido durante los años 70 y 80.",
+        "imagen": "imagenes_revistas/sounds.jpg",
+        "enlace": "https://es.wikipedia.org/wiki/Sounds_(revista)"
+    },
+    {
+        "titulo": "NME (New Musical Express)",
+        "descripcion": "Cubrió extensamente el post-punk, especialmente en sus años dorados de finales de los 70 y principios de los 80.",
+        "imagen": "imagenes_revistas/nme.jpg",
+        "enlace": "https://es.wikipedia.org/wiki/NME"
+    },
+    {
+        "titulo": "Melody Maker",
+        "descripcion": "Otra revista británica que documentó la escena musical, incluyendo el post-punk.",
+        "imagen": "imagenes_revistas/melody maker.jpg",
+        "enlace": "https://en.wikipedia.org/wiki/Melody_Maker"
+    },
+    {
+        "titulo": "Rolling Stone",
+        "descripcion": "Aunque no exclusivamente de post-punk, cubrió muchos aspectos del género. (edición británica y estadounidense)",
+        "imagen": "imagenes_revistas/rolling stones.jpg",
+        "enlace": "https://es.wikipedia.org/wiki/Rolling_Stone"
+    },
+    {
+        "titulo": "The Face",
+        "descripcion": "Revista cultural que a menudo incluía artículos sobre bandas post-punk y la estética asociada.",
+        "imagen": "imagenes_revistas/the face.jpg",
+        "enlace": "https://en.wikipedia.org/wiki/The_Face_(magazine)"
+    },
+    {
+        "titulo": "Q Magazine",
+        "descripcion": "Conocida por sus retrospectivas detalladas y entrevistas con bandas de post-punk.",
+        "imagen": "imagenes_revistas/q.jpg",
+        "enlace": "https://en.wikipedia.org/wiki/Q_(magazine)"
+    }
+]
