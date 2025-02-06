@@ -4,23 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movimientos Artísticos Influenciados por el Post-Punk</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/postpunk/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #bb0000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Cinzel Decorative', sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .movimientos-container {
+            display: flex;
+            flex-direction: column; /* Cambiado a columna */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .movimiento-item {
+            background-color: #2F0F40;
+            color: #bb0000;
+            padding: 20px;
+            border: 3px solid #bb0000;
+            border-radius: 10px;
+            width: 100%; /* Ancho completo */
+            box-shadow: 0 2px 4px rgba(133, 2, 2, 0.5);
+            cursor: pointer;
+        }
+
+        .movimiento-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .movimiento-item a {
+            color: #ff0000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .movimiento-item a:hover {
+            color: #bb0000;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #2F0F40;
+            margin: 5% auto;
+            padding: 20px;
+            border: 3px solid #bb0000;
+            width: 90%;
+            max-width: 600px;
+            color: #bb0000;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #bb0000;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #ff0000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #8b0000;
+            border-radius: 10px;
+        }
+
+        .modal-description {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #b0b0b0;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </head>
 <body>
+    <a href="javascript:void(0);" class="vampire-button" onclick="goBack()">🔺 Regresar</a>
     <main class="content">
         <section id="movimientos-influyentes">
-            <h1>Movimientos Artísticos Influenciados por el Post-Punk</h1>
-            <ul>
-                <li><a href="movimientos/neo_expressionismo.html">Neo-Expressionismo</a>: Este movimiento artístico de los años 80, que resurgió el interés por la pintura figurativa y emocional, compartió con el post-punk un rechazo a la estética limpia y minimalista de la década anterior, favoreciendo la espontaneidad, el color y la textura. Artistas como Jean-Michel Basquiat y Julian Schnabel fueron influenciados por y a su vez influyeron en la cultura post-punk.</li>
-                <li><a href="movimientos/arte_punk.html">Arte Punk</a>: Aunque el punk es más bien un precursor, el arte punk, con su enfoque en el DIY (Do It Yourself), la subversión y la estética cruda, se extendió al post-punk. Los fanzines, el arte gráfico de las bandas y las performances en vivo son ejemplos de cómo el punk influyó en la estética post-punk.</li>
-                <li><a href="movimientos/new_wave_arte.html">New Wave en el Arte</a>: Paralelamente al movimiento musical, el "new wave" en el arte se caracterizó por una mezcla de modernismo y pop, con un enfoque en la ironía, la trivialidad y la cultura popular. Artistas como Keith Haring y Robert Longo capturaron el espíritu de la música post-punk en sus obras, utilizando técnicas y temáticas que resonaban con el público de la época.</li>
-                <li><a href="movimientos/arte_no_wave.html">Arte No-Wave</a>: Originado en Nueva York, el no-wave fue un movimiento artístico y musical que rechazó las convenciones del punk y el post-punk, buscando algo más experimental, caótico y menos comercial. Figuras como Lydia Lunch y James Chance, junto con artistas visuales como David Wojnarowicz, crearon un ambiente de arte que iba de lo performático a lo visual, con un fuerte énfasis en la desestructuración y el nihilismo.</li>
-                <li><a href="movimientos/post_punk_cinema.html">Post-Punk Cinema</a>: Aunque no es un movimiento artístico en el sentido tradicional, el cine post-punk capturó la atmósfera y las preocupaciones de la época. Películas como "Jubilee" de Derek Jarman o "The Great Rock 'n' Roll Swindle" de Julien Temple reflejan la estética, la música y la filosofía post-punk, influenciando cómo el arte visual y la música interactuaban.</li>
-                <li><a href="movimientos/gothic_art.html">Gothic Art</a>: El post-punk influyó directamente en el surgimiento del goth como subcultura, que a su vez tuvo un reflejo en el arte. Artistas como Anne Sudworth y J.K. Potter, cuyas obras exploran la oscuridad, la melancolía y lo macabro, se alinean con la estética gótica desarrollada en paralelo al post-punk.</li>
-                <li><a href="movimientos/diy_cultura_zine.html">DIY y Cultura Zine</a>: La ética del "hazlo tú mismo" del post-punk se tradujo en una explosión de fanzines y arte gráfico hecho por aficionados y artistas. Este movimiento no solo democratizó el arte sino que también creó una red de subculturas donde el arte, la música y la literatura se fusionaban.</li>
-                <li><a href="movimientos/arte_contemporaneo_performance.html">Arte Contemporáneo y Performance</a>: Muchos artistas contemporáneos y performers de los años 80 y 90 fueron influenciados por la energía y las temáticas del post-punk. El trabajo de grupos como The Blue Man Group o artistas como Leigh Bowery se nutrieron de la estética y la subversión cultural del post-punk.</li>
-            </ul>
+            <h1>Movimientos Artísticos</h1>
+            <div class="movimientos-container">
+                <!-- Movimientos-influyentes items will be inserted here -->
+            </div>
         </section>
     </main>
+
+    <script>
+        fetch('json/movimientos.json')
+        .then(response => response.json())
+        .then(data => {
+            const movimientosContainer = document.querySelector('.movimientos-container');
+            data.forEach(movimiento => {
+                const movimientoItem = document.createElement('div');
+                movimientoItem.classList.add('movimiento-item');
+                movimientoItem.innerHTML = `
+                    <h2>${movimiento.nombre}</h2>
+                    <p>${movimiento.descripcion}</p>
+                    <img src="${movimiento.imagen}" alt="${movimiento.nombre}">
+                    <p><a href="${movimiento.enlace}" target="_blank">Más información</a></p>
+                `;
+                movimientoItem.addEventListener('click', () => {
+                    showModal(movimiento);
+                });
+                movimientosContainer.appendChild(movimientoItem);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching movimientos:', error);
+        });
+
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.id = "myModal";
+    const modalContent = document.createElement('div');
+    modalContent.classList.add('modal-content');
+    const closeBtn = document.createElement('span');
+    closeBtn.classList.add('close');
+    closeBtn.innerHTML = '&times;';
+    modalContent.appendChild(closeBtn);
+    const modalBody = document.createElement('div');
+    modalBody.classList.add('modal-description');
+    modalContent.appendChild(modalBody);
+    modal.appendChild(modalContent);
+    document.body.appendChild(modal);
+
+    function showModal(data) {
+        modalBody.innerHTML = `
+            <h2>${data.nombre}</h2>
+            <p>${data.descripcion}</p>
+            <img src="${data.imagen}" alt="${data.nombre}">
+            <p><a href="${data.enlace}" target="_blank">Más información</a></p>
+        `;
+        modal.style.display = "block";
+    }
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
 </body>
 </html>
