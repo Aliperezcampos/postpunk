@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ropa Negra y Desgastada Estilos Postpunk</title>
+    <title>Chaquetas de Cuero y Abrigos Largos</title>
     <link rel="stylesheet" href="/postpunk/style.css">
     <style>
         body {
@@ -93,8 +93,8 @@
 <body>
     <a href="javascript:void(0);" class="vampire-button" onclick="goBack()">🔺 Regresar</a>
     <main class="content">
-        <h1>Ropa Negra y Desgastada Estilos Postpunk</h1>
-        <p>La ropa negra y desgastada es un elemento característico de la estética postpunk. Aquí te presentamos una galería con algunas prendas que podrían interesarte.</p>
+        <h1>Chaquetas de Cuero y Abrigos Largos</h1>
+        <p>Las chaquetas de cuero y los abrigos largos son elementos esenciales de la estética postpunk y gótica. Aquí te presentamos una selección de estas prendas que podrían interesarte.</p>
         <p>Da clic en las imágenes para verlas en tamaño completo.</p>
     <div class="gallery">
         <!-- Aquí se insertarán los elementos de la galería -->
@@ -103,14 +103,14 @@
 
     <!-- Modal -->
     <div id="myModal" class="modal">
-        <span class="close">&times;</span>
+        <span class="close">×</span>
         <div class="modal-content">
             <img id="modalImg" src="" alt="">
         </div>
     </div>
 
     <script>
-        fetch('json/ropa.json')
+        fetch('json/chaquetas.json')
             .then(response => response.json())
             .then(data => {
                 const gallery = document.querySelector('.gallery');

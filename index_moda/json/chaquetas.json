@@ -1,0 +1,87 @@
+[
+  {
+    "nombre": "Sombra Silenciosa",
+    "descripcion": "Inspirado en la oscuridad y la introspección típicas del género, combina elementos de elegancia gótica con un aire de rebeldía contemporánea, capturando la atmósfera melancólica y misteriosa de esta corriente musical y cultural.",
+    "imagen": "imagenes_chaquetas/sombra.jpg"
+  },
+  {
+    "nombre": "Eco de la Noche",
+    "descripcion": "Con una mezcla de estilos vintage y contemporáneos, Eco de la Noche celebra la diversidad de influencias que pueden coexistir en el mundo post-punk, desde la música hasta el cine de terror, creando una atmósfera única y cautivadora.",
+    "imagen": "imagenes_chaquetas/eco.jpg"
+  },
+  {
+    "nombre": "Sombra Urbana",
+    "descripcion": "Es una celebración de la individualidad y la resistencia, reflejando cómo el espíritu del post-punk se adapta y evoluciona en el entorno urbano contemporáneo.",
+    "imagen": "imagenes_chaquetas/som_urbana.jpg"
+  },
+  {
+    "nombre": "Eclipse Nocturno",
+    "descripcion": "Este proyecto captura la esencia de la subcultura post-punk a través de prendas icónicas como la chaqueta de cuero, combinadas con un enfoque minimalista que resalta la actitud y la rebeldía. Es una celebración de la oscuridad y la elegancia, donde menos es más, y cada detalle cuenta una historia de individualidad y resistencia en el mundo moderno.",
+    "imagen": "imagenes_chaquetas/eclipse.jpg"
+  },
+  {
+    "nombre": "Sombra Audaz",
+    "descripcion": "Es una exploración de cómo la moda post-punk puede ser tanto provocativa como elegante, capturando la esencia de la subcultura a través de una estética que desafía las normas mientras mantiene una coherencia visual.",
+    "imagen": "imagenes_chaquetas/audaz.jpg"
+  },
+  {
+    "nombre": "Rebelde Urbano",
+    "descripcion": "Es una declaración de estilo que abraza la rebeldía y la individualidad, reflejando cómo la subcultura post-punk se adapta y se expresa en el entorno urbano actual, manteniendo su esencia de desafío y originalidad.",
+    "imagen": "imagenes_chaquetas/rebelde.jpg"
+  },
+  {
+    "nombre": "Elegancia Oscura",
+    "descripcion": "Es una visión del post-punk que abraza la estética gótica y la moda urbana, creando un look que es tanto misterioso como refinado, ideal para aquellos que buscan expresar su individualidad con un toque de elegancia nocturna.",
+    "imagen": "imagenes_chaquetas/elegancia.jpg"
+  },
+  {
+    "nombre": "Estilo Rebelde",
+    "descripcion": "La estética se centra en la oscuridad y la sensualidad, utilizando prendas ceñidas y texturas ricas para crear un look que es tanto provocativo como sofisticado, perfecto para aquellos que buscan destacar en la noche con un toque de misterio y desafío.",
+    "imagen": "imagenes_chaquetas/estilo.jpg"
+  },
+  {
+    "nombre": "Dominio Oscuro",
+    "descripcion": "Es un estilo que combina la estética de la subcultura post-punk con elementos de fantasía oscura, creando una imagen que es tanto imponente como seductora, perfecta para aquellos que buscan proyectar poder y misterio a través de su vestimenta.",
+    "imagen": "imagenes_chaquetas/dominio.jpg"
+  },
+  {
+    "nombre": "Horizonte Rebelde",
+    "descripcion": " Es un estilo que abraza la estética urbana y la libertad de movimiento, ideal para aquellos que desean proyectar una imagen de rebeldía controlada y estilo sin esfuerzo, perfecto para aventuras en la ciudad o escapadas al aire libre.",
+    "imagen": "imagenes_chaquetas/horizonte.jpg"
+  },
+  {
+    "nombre": "Callejón Urbano",
+    "descripcion": "Es un look que refleja la vida en la ciudad, combinando la rebeldía del post-punk con la elegancia necesaria para moverse entre los rascacielos, ideal para aquellos que buscan una estética que sea tanto funcional como estilizada en el entorno urbano.",
+    "imagen": "imagenes_chaquetas/callejon.jpg"
+  },
+  {
+    "nombre": "Fortaleza Sombría",
+    "descripcion": "Es un estilo que combina la oscuridad y la rebeldía del post-punk con la practicidad y la estructura de la moda militar, ideal para aquellos que buscan proyectar una imagen de fuerza y preparación en un mundo post-apocalíptico o urbano.",
+    "imagen": "imagenes_chaquetas/fortaleza.jpg"
+  },
+  {
+    "nombre": "Eclipse de Medianoche",
+    "descripcion": "Es un estilo perfecto para aquellos que desean proyectar una presencia imponente y misteriosa, combinando la rebeldía del post-punk con una sofisticación que solo la noche puede ofrecer.",
+    "imagen": "imagenes_chaquetas/medianoche.jpg"
+  },
+  {
+    "nombre": "CiberGótico",
+    "descripcion": "Este proyecto se caracteriza por prendas con detalles metálicos, correas y cremalleras, que junto con los accesorios como cinturones y adornos en el cuero, evocan una imagen de un futuro distópico con toques de la moda gótica tradicional. Es ideal para aquellos que buscan expresar una identidad que mezcla la nostalgia del pasado con la visión de un mundo futuro, oscuro y misterioso.",
+    "imagen": "imagenes_chaquetas/ciber.jpg"
+  },
+  {
+    "nombre": "Contraluz Urbano",
+    "descripcion": "Este proyecto combina elementos clásicos del post-punk, como la chaqueta de cuero, con piezas casuales como jeans desgastados y camisetas ajustadas, creando un look que es tanto rebelde como accesible. Es perfecto para aquellos que desean una estética post-punk que se pueda llevar en el día a día, mezclando la oscuridad del género con la luz de la vida cotidiana en la ciudad.",
+    "imagen": "imagenes_chaquetas/contraluz.jpg"
+  },
+  {
+    "nombre": "Velvet Nocturno",
+    "descripcion": "Este proyecto se caracteriza por el uso de tejidos como el terciopelo con patrones intrincados, combinados con detalles como cremalleras y mallas, que añaden un toque de modernidad y sofisticación. Es un estilo perfecto para aquellos que desean una apariencia que sea tanto elegante como provocativa, fusionando la oscuridad del post-punk con la textura y el lujo del velvet en un contexto nocturno.",
+    "imagen": "imagenes_chaquetas/velvet.jpg"
+  },
+  {
+    "nombre": "Postpunk Urbano",
+    "descripcion": "Una chaqueta de cuero negra con detalles de tachas, camiseta negra, pantalones negros ajustados y botas negras. El gorro negro y la cadena en el pantalón añaden un toque distintivo al estilo postpunk.",
+    "imagen": "imagenes_chaquetas/urban1.jpg"
+  }
+]

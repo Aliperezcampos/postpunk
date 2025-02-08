@@ -1,0 +1,92 @@
+[
+  {
+    "nombre": "Cresta de Fénix",
+    "descripcion": "Captura la esencia de la rebeldía y la creatividad con su estilo audaz y vanguardista. Este look presenta una cresta alta y dramática, con secciones de cabello teñidas en un vibrante color amarillo, que se entrelazan con trenzas y mechones naturales, creando una textura y volumen únicos.",
+    "imagen": "imagenes_peinados/cresta.jpg"
+  },
+  {
+    "nombre": "Mohawk Nocturno",
+    "descripcion": " Combina la actitud rebelde del punk con un toque de misterio y estilo gótico. Este look presenta un mohawk alto y voluminoso, teñido en un profundo tono azul oscuro que se desvanece hacia el púrpura, evocando la oscuridad de la noche. Los costados están rapados, acentuando la altura y dramatismo del mohawk, mientras que la franja de cabello más larga en la parte delantera añade un contraste interesante.",
+    "imagen": "imagenes_peinados/mohawk.jpg"
+  },
+  {
+    "nombre": "Pluma de Plata",
+    "descripcion": "Destaca por su audacia y elegancia, fusionando la estética punk con un toque de sofisticación. Este estilo presenta un mohawk largo y fino, con el cabello teñido en un tono plateado brillante que se desvanece sutilmente hacia un tono lila en la base, creando un efecto de pluma etérea.",
+    "imagen": "imagenes_peinados/pluma.jpg"
+  },
+  {
+    "nombre": "Rosa Neón",
+    "descripcion": "Destaca por su vibrante color rosa neón, que captura la atención y refleja una personalidad audaz y creativa. Este estilo presenta un undercut en un lado de la cabeza, con el cabello largo y liso cayendo sobre el otro lado, creando un contraste moderno y asimétrico.",
+    "imagen": "imagenes_peinados/rosa.jpg"
+  },
+  {
+    "nombre": "Fuego Escarlata",
+    "descripcion": "Irradia intensidad y estilo con su vibrante color rojo. Este look presenta un cabello largo y liso, teñido en un tono rojo intenso que recuerda a las llamas, añadiendo un toque de pasión y rebeldía. La raya lateral y el flequillo largo que cae sobre un ojo aportan un aire misterioso y sofisticado.",
+    "imagen": "imagenes_peinados/fuego.jpg"
+  },
+  {
+    "nombre": "Ondas Rebeldes",
+    "descripcion": "Combina la estética punk con un toque de elegancia vintage. Este estilo presenta una base de cabello largo y ondulado, con un lado rapado que añade un contraste audaz. Las ondas suaves y voluminosas en el lado largo del cabello aportan un aire de sofisticación, mientras que las trenzas laterales y el look desaliñado en la parte superior transmiten una actitud rebelde y despreocupada.",
+    "imagen": "imagenes_peinados/ondas.jpg"
+  },
+  {
+    "nombre": "Trenzas Arcoíris",
+    "descripcion": "Mezcla la estética punk con un toque de fantasía y color. Este estilo presenta una base de cabello rubio con un mohawk alto y trenzado, donde se han incorporado colores pastel vibrantes como el azul, rojo y verde en las trenzas, creando un efecto visual impactante y juguetón.",
+    "imagen": "imagenes_peinados/trenzas.jpg"
+  },
+  {
+    "nombre": " Ondas de Ensueño",
+    "descripcion": "Combina la dulzura con un toque de modernidad rebelde. Este estilo presenta un lado del cabello rapado, mientras que el otro lado cae en largas ondas suaves y voluminosas, con un color rubio que se desvanece hacia tonos pastel como el lila y el rosa en las puntas, creando un efecto etéreo y soñador.",
+    "imagen": "imagenes_peinados/ensueno.jpg"
+  },
+  {
+    "nombre": "Llamas Crepúsculo",
+    "descripcion": "Este estilo presenta un cabello largo y ondulado, teñido en un vibrante rojo que se desvanece en tonos naranjas y amarillos en las puntas, reminiscente de las llamas al anochecer. El cabello está peinado hacia un lado, dejando espacio para un look asimétrico que añade carácter y modernidad.",
+    "imagen": "imagenes_peinados/llamas.jpg"
+  },
+  {
+    "nombre": " Púrpura Profundo",
+    "descripcion": "Este estilo presenta un cabello largo, liso y de un intenso color púrpura que captura la luz, creando profundidad y dimensión. El cabello cae libremente, con una raya al medio que añade simetría al look.",
+    "imagen": "imagenes_peinados/purpura.jpg"
+  },
+  {
+    "nombre": "Rubí Salvaje",
+    "descripcion": "Este estilo presenta un cabello largo y ondulado, con un volumen y textura que aportan un aire de desenfreno y pasión. El cabello cae en capas, con un lado ligeramente más largo que el otro, creando un look asimétrico que añade carácter y dinamismo.",
+    "imagen": "imagenes_peinados/rubi.jpg"
+  },
+  {
+    "nombre": "Trenzados de Sirena",
+    "descripcion": "Este estilo presenta un cabello largo y ondulado, con una sección superior trenzada en múltiples trenzas pequeñas que se entrelazan de manera artística, recordando a las decoraciones capilares de las sirenas en los cuentos de hadas.",
+    "imagen": "imagenes_peinados/sirena.jpg"
+  },
+  {
+    "nombre": " Sombra de Libertad",
+    "descripcion": "Este estilo presenta un undercut pronunciado en los laterales y la parte posterior, con el cabello en la parte superior y frontal dejado largo y peinado hacia atrás, creando un mohawk natural y desordenado.",
+    "imagen": "imagenes_peinados/sombra.jpg"
+  },
+  {
+    "nombre": "Cascada Inversa",
+    "descripcion": "Juega con la simplicidad y la modernidad. Este estilo presenta un corte corto en la parte superior y los lados, con el cabello en la parte de atrás dejado largo y liso, creando un efecto visual de una cascada que fluye hacia atrás.",
+    "imagen": "imagenes_peinados/cascada.jpg"
+  },
+  {
+    "nombre": "Ola de Asfalto",
+    "descripcion": "Este estilo presenta un undercut en los laterales y la parte posterior, dejando el cabello en la parte superior y la frente largo y peinado hacia atrás, creando una ola suave que se extiende hacia la parte de atrás del cuello. La textura lisa y el contraste entre la longitud del cabello en la parte superior y el corte corto en los lados aportan un look limpio pero con un toque distintivo.",
+    "imagen": "imagenes_peinados/ola.jpg"
+  },
+  {
+    "nombre": "Textura Urbana",
+    "descripcion": "Un peinado que combina la simplicidad con un toque de modernidad. Este estilo presenta un corte corto y texturizado en la parte superior, con un degradado en los lados que añade un contraste sutil pero elegante.",
+    "imagen": "imagenes_peinados/textura.jpg"
+  },
+  {
+    "nombre": "Púa Urbana",
+    "descripcion": "Este look presenta un cabello corto en los lados y la parte posterior, mientras que la parte superior está peinada hacia arriba en púas desordenadas, creando un efecto de dinamismo y rebeldía.",
+    "imagen": "imagenes_peinados/pua.jpg"
+  },
+  {
+    "nombre": "Desenfreno Nocturno",
+    "descripcion": "Este estilo presenta un corte corto y desordenado en la parte superior, con mechones de cabello negros que se erizan en todas direcciones, creando una silueta rebelde y caótica. La textura y el volumen del cabello añaden un aire de libertad y expresión artística.",
+    "imagen": "imagenes_peinados/desenfreno.jpg"
+  }
+]

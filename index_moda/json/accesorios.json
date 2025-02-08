@@ -1,0 +1,92 @@
+[
+  {
+    "nombre": "Rebelde Ecléctico",
+    "descripcion": "Esta pieza es perfecta para aquellos que buscan un accesorio que combine la rebeldía con un toque de sofisticación.",
+    "imagen": "imagenes_accesorios/rebelde.jpg"
+  },
+  {
+    "nombre": "Estrella Rebelde",
+    "descripcion": "Una bolsa que captura la esencia del post-punk con su diseño audaz y decoración con tachuelas circulares. Esta pieza es ideal para aquellos que buscan un accesorio que añada un toque de rebeldía y estilo a su look",
+    "imagen": "imagenes_accesorios/estrella.jpg"
+  },
+  {
+    "nombre": "Rebelde Metálico",
+    "descripcion": "Unas botas que encarnan la estética post-punk con su diseño robusto y las múltiples hebillas doradas. Estas botas no solo ofrecen un look distintivo y audaz, sino que también añaden un toque de sofisticación con sus detalles metálicos.",
+    "imagen": "imagenes_accesorios/metalico.jpg"
+  },
+  {
+    "nombre": "Lunares Rebeldes",
+    "descripcion": "Unos zapatos que combinan la estética post-punk con un diseño juguetón y elegante. Con su patrón de lunares blancos sobre cuero negro y las hebillas metálicas que añaden un toque edgy, estos zapatos son una declaración de estilo que mezcla la rebeldía con la feminidad.",
+    "imagen": "imagenes_accesorios/lunares.jpg"
+  },
+  {
+    "nombre": "Carmesí Audaz",
+    "descripcion": "Una bolsa de mano que combina la elegancia con un toque de rebeldía post-punk. Con su rico color burdeos y decoración de tachuelas plateadas, esta bolsa es una pieza que destaca por su audacia y estilo.",
+    "imagen": "imagenes_accesorios/carmesi.jpg"
+  },
+  {
+    "nombre": "Estilo Punteado",
+    "descripcion": "Unos loafers que combinan la elegancia clásica con un toque rebelde del post-punk. Con su diseño en cuero negro y decoración de tachuelas plateadas, estos zapatos añaden un aire distintivo y moderno a cualquier atuendo.",
+    "imagen": "imagenes_accesorios/punteado.jpg"
+  },
+  {
+    "nombre": "Plataforma Rebelde",
+    "descripcion": "Unos botines que encapsulan la esencia post-punk con su diseño robusto y su suela de plataforma exagerada. Con su color negro profundo y las correas con hebillas metálicas, estos botines no solo ofrecen una altura adicional sino también un estilo distintivo y audaz.",
+    "imagen": "imagenes_accesorios/plataforma.jpg"
+  },
+  {
+    "nombre": "Lunas Encadenadas",
+    "descripcion": "Accesorio que añade un toque de misterio y estilo post-punk a cualquier atuendo. Compuesto por varias cadenas de metal plateado que cuelgan de un cinturón, este conjunto incluye detalles distintivos como pequeñas lunas que aportan un aire místico y rebelde.",
+    "imagen": "imagenes_accesorios/lunas.jpg"
+  },
+  {
+    "nombre": "Cadenas de Sombra",
+    "descripcion": "Un accesorio que redefine la moda post-punk con su diseño audaz y detalles metálicos. Este cinturón negro con múltiples cadenas plateadas que cuelgan libremente, junto con hebillas y anillos, añade un toque de rebeldía y sofisticación.",
+    "imagen": "imagenes_accesorios/cadenas.jpg"
+  },
+  {
+    "nombre": "Armadura Urbana",
+    "descripcion": "Un cinturón que combina la funcionalidad con un diseño post-punk distintivo. Con su cuero negro robusto y decorado con tachuelas y placas metálicas, este cinturón no solo asegura tu Outfit sino que también añade un aire de rebeldía y estilo.",
+    "imagen": "imagenes_accesorios/armadura.jpg"
+  },
+  {
+    "nombre": "Espinas y Cadenas",
+    "descripcion": "Una pulsera que captura la esencia del post-punk con su diseño audaz y detalles metálicos. Con su base de cuero negro adornada con tachuelas puntiagudas y cadenas plateadas que cuelgan libremente, esta pulsera no solo añade un toque de rebeldía sino también un aire de sofisticación oscura.",
+    "imagen": "imagenes_accesorios/espinas.jpg"
+  },
+  {
+    "nombre": "Guantelete de Calavera",
+    "descripcion": "Un accesorio que encarna la estética post-punk con un diseño dramático y distintivo. Este guantelete de cuero negro está adornado con una calavera metálica en el centro, rodeada de cadenas que conectan diferentes secciones, incluyendo una pieza que cubre el dedo medio.",
+    "imagen": "imagenes_accesorios/guantelete.jpg"
+  },
+  {
+    "nombre": "Collar de Espinas",
+    "descripcion": "Una colección de collares que encapsula la esencia del post-punk con su diseño audaz y detalles metálicos. Compuesto por múltiples cadenas y correas de cuero adornadas con tachuelas y colgantes en forma de calavera, estos collares no solo añaden un toque de rebeldía sino también una profundidad visual única.",
+    "imagen": "imagenes_accesorios/collar.jpg"
+  },
+  {
+    "nombre": "Cruz de Cadena",
+    "descripcion": "Look postpunk, caracterizado por una chaqueta de cuero negra, camiseta negra y collares de cuentas negras. Los tatuajes en el cuello refuerzan la estética rebelde y alternativa típica del postpunk.",
+    "imagen": "imagenes_accesorios/cruz.jpg"
+  },
+  {
+    "nombre": "Lunas Encadenadas",
+    "descripcion": "Este accesorio negro está adornado con cadenas plateadas de las cuales cuelgan varias lunas, añadiendo un toque de simbolismo lunar a la rebeldía del diseño.",
+    "imagen": "imagenes_accesorios/encadenadas.jpg"
+  },
+  {
+    "nombre": "Arnés de Sombra",
+    "descripcion": "Este arnés de cuero negro, con múltiples correas y hebillas metálicas, no solo añade un elemento de utilidad y estilo a cualquier atuendo, sino que también evoca una imagen de fuerza y misterio.",
+    "imagen": "imagenes_accesorios/arnes.jpg"
+  },
+  {
+    "nombre": "Malla de Rebeldía",
+    "descripcion": "Es un top que fusiona la transparencia de la malla con la estructura del cuero, creando una pieza emblemática del estilo post-punk. Con su diseño de malla negra que deja ver la piel, combinado con un arnés de cuero que incluye detalles como hebillas, tachuelas y bolsillos, este top no solo ofrece un look audaz y moderno, sino que también añade un aire de misterio y fuerza.",
+    "imagen": "imagenes_accesorios/malla.jpg"
+  },
+  {
+    "nombre": "Clásico Rebelde",
+    "descripcion": "Con su diseño de cuero negro liso y su suela de goma característica, esta bota no solo ofrece durabilidad y comodidad, sino que también añade un toque de rebeldía clásica a cualquier atuendo.",
+    "imagen": "imagenes_accesorios/clasico.jpg"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "nombre": "Mirada de Obsidiana",
+    "descripcion": "Estilo de maquillaje que destaca por su dramatismo y sofisticación. Este look presenta unas líneas de ojos gruesas y extendidas, trazadas en un negro profundo que recuerda al brillo de la obsidiana, creando un efecto de ojos felinos y penetrantes. Los labios están pintados con un tono oscuro, posiblemente negro o un rojo muy oscuro, añadiendo un aire de misterio y elegancia gótica.",
+    "imagen": "imagenes_maquillaje/mirada.jpg"
+  },
+  {
+    "nombre": "Romance Gótico",
+    "descripcion": "Un estilo de maquillaje que evoca una atmósfera de misterio y elegancia oscura. Este look destaca por sus ojos dramáticamente delineados en tonos oscuros, probablemente negros o grises profundos, que se extienden hacia fuera para un efecto ahumado y misterioso. Los labios están pintados en un tono burdeos intenso, añadiendo un toque de sofisticación y dramatismo. La piel se mantiene pálida, lo que realza el contraste con el maquillaje oscuro, creando una apariencia etérea.",
+    "imagen": "imagenes_maquillaje/romance.jpg"
+  },
+  {
+    "nombre": "Misterio Esmeralda",
+    "descripcion": "Un estilo de maquillaje que combina la intriga con un toque de fantasía. Este look se caracteriza por el uso de sombras de ojos en tonos brillantes de verde esmeralda que se extienden dramáticamente alrededor de los ojos, creando un efecto hipnótico y místico. Los labios están pintados en un color rosa fuerte, que contrasta con el tono oscuro y sobrenatural de la piel, realzando la palidez y añadiendo un aire de modernidad.",
+    "imagen": "imagenes_maquillaje/misterio.jpg"
+  },
+  {
+    "nombre": "Velada Nocturnal",
+    "descripcion": "Un estilo de maquillaje que envuelve en misterio y sofisticación. Este look presenta un uso dramático del delineador negro que se extiende en alas largas, creando un efecto de ojos profundos y enigmáticos. Los labios están pintados en un tono oscuro, probablemente negro o un gris muy oscuro, que añade un toque de intensidad y dramatismo. La piel se mantiene pálida, casi etérea, lo que contrasta con el maquillaje oscuro, realzando la atmósfera nocturna.",
+    "imagen": "imagenes_maquillaje/velada.jpg"
+  },
+  {
+    "nombre": "Reina de la Noche",
+    "descripcion": "Un estilo de maquillaje dramático y sofisticado, ideal para aquellos que buscan hacer una declaración audaz. Este look presenta un uso generoso de delineador negro que se extiende en alas largas y dramáticas, realzando la intensidad de la mirada. Los labios están pintados en un tono oscuro, posiblemente negro o un morado profundo, que añade un toque de misterio y elegancia.",
+    "imagen": "imagenes_maquillaje/reina.jpg"
+  },
+  {
+    "nombre": "Ojos de Esmeralda",
+    "descripcion": "Un estilo de maquillaje que destaca por su uso audaz de colores vivos y su aire de sofisticación vintage. Este look presenta unos ojos dramáticamente maquillados con sombras de tonos verdes esmeralda intensos, creando un efecto hipnótico y exótico. Los labios están pintados en un tono oscuro, probablemente negro o un gris muy oscuro, que añade un toque de misterio y dramatismo.",
+    "imagen": "imagenes_maquillaje/ojos.jpg"
+  },
+  {
+    "nombre": "Sombra Rebelde",
+    "descripcion": "Este look se caracteriza por un uso dramático de delineador negro que no solo perfila los ojos, sino que también se extiende en patrones gráficos inusuales, creando una apariencia de arte moderno sobre el rostro. Los ojos están acentuados con sombras en tonos oscuros y rojizos, añadiendo profundidad y un toque de intensidad. Los labios se mantienen en un tono nude sutil, lo que permite que el maquillaje de ojos sea el punto focal.",
+    "imagen": "imagenes_maquillaje/sombra.jpg"
+  },
+  {
+    "nombre": "Neón Urbano",
+    "descripcion": "Este look presenta un uso audaz de colores neón, especialmente en los ojos, donde se utilizan sombras en tonos verdes eléctricos que se extienden en patrones dramáticos, creando una mirada intensa y futurista. Los labios están pintados en un tono rosa vibrante, añadiendo un contraste vivaz con la piel pálida y casi translúcida.",
+    "imagen": "imagenes_maquillaje/neon.jpg"
+  },
+  {
+    "nombre": "Ciberpunk Nocturno",
+    "descripcion": "Este look utiliza tonos oscuros y metálicos, con sombras de ojos en tonos profundos que se extienden dramáticamente, creando una mirada intensa y futurista. Los labios están pintados en un tono morado oscuro, que añade un aire de sofisticación y rebeldía. La piel se mantiene pálida, casi etérea, lo que resalta el contraste con el maquillaje oscuro y los reflejos metálicos de la ropa.",
+    "imagen": "imagenes_maquillaje/ciber.jpg"
+  },
+  {
+    "nombre": "Elegancia Nocturna",
+    "descripcion": "Este look presenta un uso sutil de sombras en tonos oscuros que se aplican para resaltar la forma de los ojos, creando una mirada profunda y enigmática. Los labios están pintados en un tono nude, lo que añade un aire de naturalidad y elegancia. La piel se mantiene en un tono claro y uniforme, realzando la palidez etérea que complementa el maquillaje oscuro.",
+    "imagen": "imagenes_maquillaje/elegancia.jpg"
+  },
+  {
+    "nombre": "Ciberpunk Rebelde",
+    "descripcion": "Este look se caracteriza por el uso de maquillaje dramático y asimétrico, con delineador negro que se extiende en patrones gráficos alrededor de los ojos, creando una apariencia de alta tecnología y contracultura. Los labios están ligeramente brillantes, manteniendo un tono natural que contrasta con la intensidad del maquillaje de ojos. La piel se presenta con un acabado natural, sin demasiada cobertura, lo que permite que las imperfecciones y pecas se muestren, añadiendo autenticidad al look.",
+    "imagen": "imagenes_maquillaje/rebelde.jpg"
+  },
+  {
+    "nombre": "Futurista Clásico",
+    "descripcion": "Este look destaca por el uso de sombras brillantes y metálicas en tonos plateados y blancos, aplicadas de manera que crean un efecto de luz sobre los párpados, dando una apariencia casi etérea. Los ojos están delineados con precisión en negro, extendiéndose en alas sutiles que añaden un toque de sofisticación. Los labios están pintados en un tono oscuro, probablemente un marrón profundo o un vino, que aporta un aire de misterio y madurez. La piel se mantiene en un tono natural, con un acabado ligeramente brillante que refleja la luz, realzando la textura de la piel.",
+    "imagen": "imagenes_maquillaje/futurista.jpg"
+  },
+  {
+    "nombre": "Sombra Violeta",
+    "descripcion": "Este look se caracteriza por la aplicación de sombras en tonos violeta metálico que cubren los párpados, creando una mirada intensa y futurista. Los ojos están delineados con precisión en negro, extendiéndose en alas finas que realzan la forma de los ojos. Los labios están pintados en un tono rosa oscuro, que añade un toque de sofisticación y modernidad.",
+    "imagen": "imagenes_maquillaje/sombra1.jpg"
+  },
+  {
+    "nombre": "Oscuridad Glamurosa",
+    "descripcion": "Este look se caracteriza por el uso de tonos oscuros y profundos, especialmente en los labios, que están pintados en un negro mate, creando un contraste sorprendente y una declaración de estilo. Los ojos están maquillados con sombras en tonos oscuros, delineados gruesamente en negro, extendiéndose en alas dramáticas que realzan la intensidad de la mirada. Las cejas están delineadas con precisión, y se añaden detalles como pequeños puntos decorativos sobre ellas, añadiendo un elemento de arte corporal al maquillaje.",
+    "imagen": "imagenes_maquillaje/oscuridad.jpg"
+  },
+  {
+    "nombre": "Gótico Moderno",
+    "descripcion": "Este look se caracteriza por el uso de sombras en tonos rojos oscuros que se extienden dramáticamente alrededor de los ojos, creando una mirada intensa y misteriosa. Los labios están pintados en un tono nude oscuro, que proporciona un contraste sutil pero elegante con el maquillaje de ojos. La piel se mantiene pálida, casi etérea, lo que realza el efecto dramático del maquillaje.",
+    "imagen": "imagenes_maquillaje/gotico.jpg"
+  },
+  {
+    "nombre": "Sombra Carmesí",
+    "descripcion": "Este look destaca por el uso de sombras de ojos en un vibrante color rojo carmesí que se extiende dramáticamente, creando una mirada penetrante y misteriosa. Los ojos están delineados con precisión en negro, con líneas gruesas que se extienden hacia las sienes, añadiendo un aire de intensidad. Los labios están pintados en un tono negro mate, lo que aporta un contraste sorprendente y un aire de misterio.",
+    "imagen": "imagenes_maquillaje/carmesi.jpg"
+  },
+  {
+    "nombre": "Bohemia Oscura",
+    "descripcion": "Este look se caracteriza por el uso de sombras en tonos oscuros y metálicos, aplicadas de manera que realzan la forma de los ojos, creando una mirada profunda y enigmática. Los labios están pintados en un tono oscuro, probablemente un marrón oscuro o un negro, que añade un aire de misterio y sofisticación.",
+    "imagen": "imagenes_maquillaje/bohemia.jpg"
+  },
+  {
+    "nombre": "Elegancia Sombreada",
+    "descripcion": "Este look se caracteriza por el uso de sombras en tonos neutros y oscuros, aplicadas de manera que crean una mirada profunda y cautivadora. Los ojos están delineados con precisión en negro, extendiéndose en alas sutiles que añaden un toque de dramatismo. Los labios están pintados en un tono oscuro, posiblemente un marrón oscuro o un negro, lo que proporciona un contraste elegante y misterioso.",
+    "imagen": "imagenes_maquillaje/sombreada.jpg"
+  },
+  {
+    "nombre": "Oscuridad Seductora",
+    "descripcion": "Este look se caracteriza por el uso dramático de sombras en tonos negros y rojos profundos que se aplican generosamente alrededor de los ojos, creando una mirada intensa y cautivadora. Los labios están pintados en un negro brillante, lo que añade un toque de sofisticación y audacia.",
+    "imagen": "imagenes_maquillaje/seductora.jpg"
+  }
+]
