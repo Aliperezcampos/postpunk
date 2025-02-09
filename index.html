@@ -52,6 +52,14 @@
             font-family: 'Cinzel Decorative', sans-serif;
         }
 
+        .download-icon {
+            text-align: center;
+            width: 50px; /* Ajusta según el tamaño del icono que prefieras */
+            height: 50px; /* Asegura que el icono sea cuadrado si es necesario */
+            border: none; /* No queremos bordes para un icono de descarga */
+            background: none; /* No necesitamos un fondo para el icono */
+        }
+
     </style>
 
 </head>
@@ -153,22 +161,22 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/postpunk/index_moda/chaquetas.html">
+                        <a href="/postpunk/index_moda/chaquetas.html" target="_blank">
                             🧥 Chaquetas de cuero y abrigos largos
                         </a>
                     </li>
                     <li>
-                        <a href="/postpunk/index_moda/accesorios.html">
+                        <a href="/postpunk/index_moda/accesorios.html" target="_blank">
                             ⛓️ Accesorios: hebillas, cadenas y tachuelas
                         </a>
                     </li>
                     <li>
-                        <a href="/postpunk/index_moda/peinados.html">
+                        <a href="/postpunk/index_moda/peinados.html" target="_blank">
                             💇‍♂️ Peinados voluminosos y colores inusuales
                         </a>
                     </li>
                     <li>
-                        <a href="/postpunk/index_moda/maquillaje.html">
+                        <a href="/postpunk/index_moda/maquillajes.html" target="_blank">
                             🎭 Maquillaje dramático y oscuro
                         </a>
                     </li>
@@ -178,7 +186,18 @@
             <p>
                 Más que una estética, la moda post-punk es un medio de resistencia y autoexpresión.  
             </p>
-        </section>        
+        </section>
+        
+        <section>
+            <div class="premio-container">
+                <h1>¡Felicidades!</h1>
+                <p>Has ganado este premio digital exclusivo:</p>
+                <a href="/postpunk/premios/presentacion.pdf" download="premio_postpunk.pdf" target="_blank">
+                    <img src="/postpunk/icons/download_img.png" alt="Icono de Descarga" class="download-icon">
+                </a>
+                <p>¡Gracias por participar y sigue disfrutando de nuestra web!</p>
+            </div>
+        </section>
 
         <section id="contacto">
             <h2>Contacto</h2>
@@ -187,10 +206,16 @@
         </section>
     </main>
 
+    <script 
+    type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'>
+    </script>
+    <script 
+        type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'F1F31ABNIP');kofiwidget2.draw();
+    </script> 
+    
     <footer class="footer">
         <p>© 2025 Cultura Post-Punk. Todos los derechos reservados.</p>
     </footer>
-
     <script>
         function toggleMenu() {
             var nav = document.querySelector('.nav-links');
