@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultura Post-Punk</title>
     <!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7DY7SQ72H"></script>
-        <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7DY7SQ72H"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'G-J7DY7SQ72H');
-        </script>
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     
@@ -29,14 +30,13 @@
             color: #ffea00; /* Amarillo más brillante al pasar el ratón por encima */
         }
         .retro-links a img {
-            border: 3px solid #ffd700; /* Bordes de amarillo neón */
+            border: 5px solid #ffd700; /* Bordes de amarillo neón más gruesos */
             border-radius: 50%; /* Forma redonda */
-            padding: 10px;
-            width: 50px; /* Ancho del icono */
-            height: 50px; /* Altura del icono */
-            background-color: #000000; /* Fondo oscuro */
-            transition: background-color 0.3s ease-in-out;
-            box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Sombra luminosa estilo neón */
+            padding: 15px; /* Más espacio alrededor de la imagen para mejorar el efecto */
+            width: 70px; /* Ancho del icono */
+            height: 70px; /* Altura del icono */
+            transition: all 0.3s ease-in-out; /* Transición suave para todas las propiedades que cambian */
+            box-shadow: 0 0 15px #ffd700, 0 0 30px #ffd700, 0 0 45px #ffd700; /* Sombra neón más intensa */
         }
         .retro-links a:hover img {
             background-color: #ffea00; /* Fondo amarillo neón al pasar el ratón por encima */
@@ -50,6 +50,13 @@
 
         body {
             font-family: 'Cinzel Decorative', sans-serif;
+            background-image: url("premios/imagen1.png");
+            background-position: 30x30; /* Ajusta la imagen para que cubra todo el fondo */
+            background-repeat: no-repeat; /* No repetir la imagen */
+            background-attachment: scroll; /* La imagen se queda fija mientras se desplaza el contenido */
+            background-position: center; /* Posiciona la imagen en el centro */
+            margin: 0; /* Elimina el margen por defecto del body */
+            padding: 0; /* Elimina el relleno por defecto del body */
         }
 
         .download-icon {
@@ -59,45 +66,9 @@
             border: none; /* No queremos bordes para un icono de descarga */
             background: none; /* No necesitamos un fondo para el icono */
         }
-
     </style>
-
 </head>
 <body>
-    <header class="navbar">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li>
-                    <a href="#musica">Música</a>
-                    <ul class="dropdown">
-                        <li><a href="#bandas">Bandas</a></li>
-                        <li><a href="#albumes">Álbumes</a></li>
-                        <li><a href="#eventos">Eventos</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#literatura">Literatura</a>
-                    <ul class="dropdown">
-                        <li><a href="#autores">Autores</a></li>
-                        <li><a href="#libros">Libros</a></li>
-                        <li><a href="#revistas">Revistas</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#arte">Arte</a>
-                    <ul class="dropdown">
-                        <li><a href="#galerias">Galerías</a></li>
-                        <li><a href="#movimientos">Movimientos</a></li>
-                    </ul>
-                </li>
-                <li><a href="#moda">Moda</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main class="content">
         <section id="home">
             <title>Redes Sociales Noventeras</title>
@@ -216,11 +187,5 @@
     <footer class="footer">
         <p>© 2025 Cultura Post-Punk. Todos los derechos reservados.</p>
     </footer>
-    <script>
-        function toggleMenu() {
-            var nav = document.querySelector('.nav-links');
-            nav.classList.toggle('nav-active');
-        }
-    </script>
 </body>
 </html>
