@@ -4,94 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 
-.navbar {
-    width: 100%;
-    background-color: #1a1a1a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
-
-.nav-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.nav-links li {
-    position: relative;
-}
-
-.nav-links a {
-    display: block;
-    padding: 14px 20px;
-    text-decoration: none;
-    color: #bb0000;
-    transition: color 0.3s ease;
-    font-family: 'Nosifer', cursive;
-}
-
-.nav-links a:hover {
-    color: #ff0000;
-}
-
-.nav-links .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #1a1a1a;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.nav-links .dropdown li {
-    width: 200px;
-}
-
-.nav-links li:hover .dropdown {
-    display: block;
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 2em;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .nav-links ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-links .dropdown {
-        position: static;
-        box-shadow: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links.nav-active {
-        display: flex;
-    }
-}
-
 body {
     background-color: #0d0d0d;
     color: #e6e6e6;
@@ -162,13 +74,6 @@ a:hover {
     color: #4b0082;
     text-shadow: 
         2px 2px 5px #bb0000,
-        0 0 5px #4b0082;
-}
-
-.nav-links a:hover {
-    color: #4b0082;
-    text-shadow: 
-        1px 1px 3px #000000,
         0 0 5px #4b0082;
 }
 
@@ -278,32 +183,6 @@ hr {
 
 /* Media queries para optimizar el diseño en dispositivos móviles */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-    
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-links.nav-active {
-        display: flex;
-    }
-
-    .nav-links a {
-        padding: 10px;
-        font-size: 1.2em;
-        border-bottom: 1px solid #bb0000;
-    }
-
     .content {
         width: 95%;
         padding: 15px;
