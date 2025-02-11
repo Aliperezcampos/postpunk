@@ -49,15 +49,21 @@
         }
 
         body {
-            font-family: 'Cinzel Decorative', sans-serif;
-            background-image: url("premios/imagen1.png");
-            background-position: 30x30; /* Ajusta la imagen para que cubra todo el fondo */
-            background-repeat: no-repeat; /* No repetir la imagen */
-            background-attachment: scroll; /* La imagen se queda fija mientras se desplaza el contenido */
-            background-position: center; /* Posiciona la imagen en el centro */
-            margin: 0; /* Elimina el margen por defecto del body */
-            padding: 0; /* Elimina el relleno por defecto del body */
+        background-image: url('icons/ankh.jpg');
+        color: #e6e6e6;
+        font-family: 'Cinzel Decorative', sans-serif;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-size: 100% 100%; /* Modificado para tamaño completo */
+        background-attachment: fixed;
+        background-position: center;
+        line-height: 1.6;
         }
+
 
         .download-icon {
             text-align: center;
@@ -66,7 +72,73 @@
             border: none; /* No queremos bordes para un icono de descarga */
             background: none; /* No necesitamos un fondo para el icono */
         }
+
+        /* Estilos básicos para modal visor imagenes*/
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        #modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+        #modal-image {
+            display: block;
+            margin: 100px auto;
+            max-width: 90%;
+            max-height: 80%;
+        }
+        #close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Reproducto audio*/
+        
+        .player {
+            background-color: #330000; /* Color oscuro, evocando la sangre coagulada */
+            border: 2px solid #800000; /* Borde rojo sangre */
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(128, 0, 0, 0.3);
+            color: #ffff00;
+        }
+
+        audio {
+            width: 100%;
+            outline: none;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #2c0000; /* Panel de controles en tono oscuro */
+        }
+
+        audio::-webkit-media-controls-play-button,
+        audio::-webkit-media-controls-pause-button {
+            background-color: #ff6b6b; /* Botones play/pause en rojo */
+            border-radius: 50%;
+        }
     </style>
+
 </head>
 <body>
     <main class="content">
@@ -83,6 +155,14 @@
                 <a href="https://www.youtube.com/@Aliperezcampos" target="_blank">
                     <img src="/postpunk/icons/youtube.png" alt="YouTube">
                 </a>
+            </div>
+
+            <div class="player">
+                <h2>Música Oscura</h2>
+                <audio controls>
+                    <source src="premios/grabacion.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
             </div>
         </section>
 
@@ -160,17 +240,41 @@
         </section>
         
         <section>
-            <div class="premio-container">
-                <h1>¡Felicidades!</h1>
-                <p>Has ganado este premio digital exclusivo:</p>
-                <a href="/postpunk/premios/presentacion.pdf" download="premio_postpunk.pdf" target="_blank">
-                    <img src="/postpunk/icons/download_img.png" alt="Icono de Descarga" class="download-icon">
-                </a>
-                <a href="premios/grabacion.mp3" download="premios/grabacion.mp3">
-                    <img src="icons/descargar_audio.png" alt="Icono de Descarga MP3" class="download-icon">
-                </a>
-                <p>¡Gracias por participar y sigue disfrutando de nuestra web!</p>
+            <div class="gallery">
+                <img src="premios/presentacion.png" alt="Imagen 1" onclick="openModal(this.src, this.alt)">
+                <img src="premios/imagen1.png" alt="Imagen 2" onclick="openModal(this.src, this.alt)">
+                <!-- Añade más imágenes aquí -->
             </div>
+        
+            <div id="modal">
+                <span id="close">×</span>
+                <img id="modal-image" src="" alt="Imagen Ampliada">
+                <button id="downloadButton" onclick="downloadImage()">Descargar Imagen</button>
+            </div>
+        
+            <script>
+                function openModal(imageSrc, imageAlt) {
+                    var modal = document.getElementById('modal');
+                    var modalImg = document.getElementById('modal-image');
+                    modal.style.display = "block";
+                    modalImg.src = imageSrc;
+                    modalImg.alt = imageAlt;  // Establecemos el alt para la accesibilidad
+                }
+        
+                var span = document.getElementById("close");
+                span.onclick = function() { 
+                    var modal = document.getElementById('modal');
+                    modal.style.display = "none";
+                }
+        
+                function downloadImage() {
+                    var modalImg = document.getElementById('modal-image');
+                    var link = document.createElement('a');
+                    link.href = modalImg.src;
+                    link.download = modalImg.alt || 'imagen_descargada.jpg'; // Si no hay alt, usa un nombre predeterminado
+                    link.click();
+                }
+            </script>
         </section>
 
         <section id="contacto">
