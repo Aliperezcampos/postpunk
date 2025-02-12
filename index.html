@@ -18,29 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     
     <style>
-        /* iconos redes sociales estilo noventero redondos */
-        .retro-links a {
-            margin: 0 20px;
-            color: #ffd700; /* Color amarillo neón */
-            font-size: 56px; /* Tamaño de los iconos aumentado */
-            transition: color 0.3s ease-in-out;
-            text-decoration: none;
-        }
-        .retro-links a:hover {
-            color: #ffea00; /* Amarillo más brillante al pasar el ratón por encima */
-        }
-        .retro-links a img {
-            border: 5px solid #ffd700; /* Bordes de amarillo neón más gruesos */
-            border-radius: 50%; /* Forma redonda */
-            padding: 15px; /* Más espacio alrededor de la imagen para mejorar el efecto */
-            width: 50px; /* Ancho del icono */
-            height: 50px; /* Altura del icono */
-            transition: all 0.3s ease-in-out; /* Transición suave para todas las propiedades que cambian */
-            box-shadow: 0 0 15px #ffd700, 0 0 30px #ffd700, 0 0 45px #ffd700; /* Sombra neón más intensa */
-        }
-        .retro-links a:hover img {
-            background-color: #ffea00; /* Fondo amarillo neón al pasar el ratón por encima */
-        }
 
         .icon-container {
             display: flex;
@@ -48,21 +25,22 @@
             margin: 40px 0;
         }
 
-        body {
-        background-image: url('icons/ankh.jpg');
-        color: #e6e6e6;
-        font-family: 'Cinzel Decorative', sans-serif;
-        font-size: 18px;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-size: 100% 100%; /* Modificado para tamaño completo */
-        background-attachment: fixed;
-        background-position: center;
-        line-height: 1.6;
+        .icon-container a {
+            margin: 0 25px; /* Aumenta el espaciado horizontal entre los íconos */
         }
+
+        .icon-container img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .icon-container img:hover {
+            transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+            opacity: 0.8; /* Reduce ligeramente la opacidad */
+        }
+
+
 
 
         .download-icon {
@@ -114,13 +92,13 @@
         /* Reproducto audio*/
         
         .player {
-            background-color: #330000; /* Color oscuro, evocando la sangre coagulada */
-            border: 2px solid #800000; /* Borde rojo sangre */
+            background-color: #490af733; /* Color oscuro, evocando la sangre coagulada */
+            border: 5px solid #f807c4; /* Borde rojo sangre */
             border-radius: 10px;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 0 15px rgba(128, 0, 0, 0.3);
-            color: #ffff00;
+            box-shadow: 0 0 15px rgba(235, 212, 8, 0.849);
+            color: #0000FF;
         }
 
         audio {
@@ -148,12 +126,15 @@
             <p>Explora el oscuro y fascinante mundo del post-punk, donde la música, la literatura y el arte se combinan para crear una experiencia única.</p>
 
             <!-- Iconos de redes sociales a mitad de la página -->
-            <div class="icon-container retro-links">
+            <div class="icon-container">
                 <a href="https://www.instagram.com/guillermoaliperezcampos/" target="_blank">
-                    <img src="/postpunk/icons/instagram.jpg" alt="Instagram">
+                    <img src="icons/instagram.jpg" alt="Instagram" width="80" height="80">
                 </a>
                 <a href="https://www.youtube.com/@Aliperezcampos" target="_blank">
-                    <img src="/postpunk/icons/youtube.png" alt="YouTube">
+                    <img src="icons/youtube.png" alt="YouTube" width="130" height="130">
+                </a>
+                <a href="https://x.com/Aliperezcampos" target="_blank">
+                    <img src="icons/x.png" alt="X" width="80" height="80">
                 </a>
             </div>
 
