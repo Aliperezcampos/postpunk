@@ -18,45 +18,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     
     <style>
+        body {
+            font-family: 'Cinzel Decorative', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .banner-container {
+            width: 100%;
+            height: auto;
+            background-color: black;
+            overflow: hidden;
+            margin: 0 auto;
+            border: 3px solid #ff00ff; /* Borde púrpura neón */
+            box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; /* Sombra para un efecto de neón */
+        }
 
+        .banner-video {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
         .icon-container {
             display: flex;
             justify-content: center;
-            margin: 40px 0;
+            margin: 20px 0;
+            flex-wrap: wrap;
         }
-
         .icon-container a {
-            margin: 0 25px; /* Aumenta el espaciado horizontal entre los íconos */
+            margin: 10px;
         }
-
         .icon-container img {
             width: 50px;
             height: 50px;
             transition: transform 0.3s ease, opacity 0.3s ease;
         }
-
         .icon-container img:hover {
-            transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
-            opacity: 0.8; /* Reduce ligeramente la opacidad */
+            transform: scale(1.2);
+            opacity: 0.8;
         }
-
-
-
-
         .download-icon {
             text-align: center;
-            width: 50px; /* Ajusta según el tamaño del icono que prefieras */
-            height: 50px; /* Asegura que el icono sea cuadrado si es necesario */
-            border: none; /* No queremos bordes para un icono de descarga */
-            background: none; /* No necesitamos un fondo para el icono */
+            width: 50px;
+            height: 50px;
+            border: none;
+            background: none;
         }
-
-        /* Estilos básicos para modal visor imagenes*/
-
         .gallery {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            justify-content: center;
         }
         .gallery img {
             width: 100px;
@@ -88,52 +101,111 @@
             font-weight: bold;
             cursor: pointer;
         }
-
-        /* Reproducto audio*/
-        
         .player {
-            background-color: #490af733; /* Color oscuro, evocando la sangre coagulada */
-            border: 5px solid #f807c4; /* Borde rojo sangre */
-            border-radius: 10px;
+            background-image: url('/icons/audio_player.png');
+            /*background-color: rgba(67, 47, 245, 0.651);*/
+            border: 5px solid rgba(170, 3, 236, 0.562);
+            border-radius: 40px;
             padding: 20px;
             text-align: center;
-            box-shadow: 0 0 15px rgba(235, 212, 8, 0.849);
+            box-shadow: 0 0 30px rgba(243, 3, 3, 0.849);
+            margin: 20px 0;
         }
-
         audio {
             width: 100%;
             outline: none;
         }
-
         audio::-webkit-media-controls-panel {
-            background-color: #2c0000; /* Panel de controles en tono oscuro */
+            background-color: #2c0000;
         }
-
         audio::-webkit-media-controls-play-button,
         audio::-webkit-media-controls-pause-button {
-            background-color: #ff6b6b; /* Botones play/pause en rojo */
+            background-color: #ff6b6b;
             border-radius: 50%;
         }
+        .content {
+            margin-top: 20px;
+            width: 90%;
+            max-width: 900px;
+            padding: 20px;
+            background-color: rgba(26, 26, 26, 0.479);
+            border: 3px solid #bb0000;
+            border-radius: 10px;
+            box-shadow: 0 0 15px 5px #000000;
+        }
+        .footer {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #e6e6e6;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            border-top: 1px solid #bb0000;
+        }
+        section h2 {
+            border-bottom: 2px solid #bb0000;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        ul li::before {
+            content: '🦇';
+            position: absolute;
+            left: 0;
+            color: #bb0000;
+        }
+        @media (max-width: 768px) {
+            .content {
+                width: 95%;
+                padding: 15px;
+            }
+            h1, h2 {
+                font-size: 1.5em;
+            }
+            p, li, a {
+                font-size: 1em;
+            }
+            .icon-container img {
+                width: 40px;
+                height: 40px;
+            }
+            .gallery img {
+                width: 80px;
+                height: 80px;
+            }
+        }
     </style>
-
 </head>
 <body>
     <main class="content">
         <section id="home">
-            <title>Redes Sociales Noventeras</title>
+            <div class="banner-container">
+                <video class="banner-video" autoplay loop muted playsinline>
+                    <source src="icons/loop_video_1.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
             <h1>Bienvenido Cultura Post-Punk</h1>
             <p>Explora el oscuro y fascinante mundo del post-punk, donde la música, la literatura y el arte se combinan para crear una experiencia única.</p>
 
             <!-- Iconos de redes sociales a mitad de la página -->
             <div class="icon-container">
                 <a href="https://www.instagram.com/guillermoaliperezcampos/" target="_blank">
-                    <img src="icons/instagram.jpg" alt="Instagram" width="80" height="80">
+                    <img src="icons/instagram.jpg" alt="Instagram">
                 </a>
                 <a href="https://www.youtube.com/@Aliperezcampos" target="_blank">
-                    <img src="icons/youtube.png" alt="YouTube" width="130" height="130">
+                    <img src="icons/youtube.png" alt="YouTube">
                 </a>
                 <a href="https://x.com/Aliperezcampos" target="_blank">
-                    <img src="icons/x.png" alt="X" width="80" height="80">
+                    <img src="icons/x.png" alt="X">
                 </a>
             </div>
 
@@ -178,13 +250,12 @@
 
         <!-- Nueva sección de moda -->
         <section id="moda">
-            <h2>Moda Post-Punk</h2>
+            <h2>Vestimenta Post-Punk</h2>
             <p>
-                La moda post-punk es una expresión de individualidad y rebeldía, combinando elementos oscuros, andróginos y alternativos.  
+                La vestimenta post-punk es una expresión de individualidad y rebeldía, combinando elementos oscuros, andróginos y alternativos.  
             </p>
             
             <div>
-                <h3>Elementos clave:</h3>
                 <ul>
                     <li>
                         <a href="/postpunk/index_moda/ropa.html">
@@ -213,13 +284,11 @@
                     </li>
                 </ul>
             </div>
-        
-            <p>
-                Más que una estética, la moda post-punk es un medio de resistencia y autoexpresión.  
-            </p>
         </section>
         
         <section>
+            
+            <h2>Galería de imágenes</h2>
             <div class="gallery">
                 <img src="premios/presentacion.png" alt="Imagen 1" onclick="openModal(this.src, this.alt)">
                 <img src="premios/imagen1.png" alt="Imagen 2" onclick="openModal(this.src, this.alt)">
@@ -259,7 +328,7 @@
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>Para más información, no dudes en contactarnos:</p>
+            <p>Para más información, no dudes en contactar:</p>
             <p><a href="mailto:aliperezcampos@hotmail.com">aliperezcampos@hotmail.com</a></p>
         </section>
     </main>
