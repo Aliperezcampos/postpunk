@@ -101,28 +101,7 @@
             font-weight: bold;
             cursor: pointer;
         }
-        .player {
-            background-image: url('/icons/audio_player.png');
-            /*background-color: rgba(67, 47, 245, 0.651);*/
-            border: 5px solid rgba(170, 3, 236, 0.562);
-            border-radius: 40px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 0 30px rgba(243, 3, 3, 0.849);
-            margin: 20px 0;
-        }
-        audio {
-            width: 100%;
-            outline: none;
-        }
-        audio::-webkit-media-controls-panel {
-            background-color: #2c0000;
-        }
-        audio::-webkit-media-controls-play-button,
-        audio::-webkit-media-controls-pause-button {
-            background-color: #ff6b6b;
-            border-radius: 50%;
-        }
+
         .content {
             margin-top: 20px;
             width: 90%;
@@ -183,6 +162,7 @@
             }
         }
     </style>
+
 </head>
 <body>
     <main class="content">
@@ -210,14 +190,14 @@
             </div>
 
             <div class="player">
-                <h2>Música Oscura</h2>
-                <audio controls>
-                    <source src="premios/grabacion.mp3" type="audio/mpeg">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
+                <!-- Elfsight Audio Player | Untitled Audio Player -->
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-3a4f4688-6ff0-4d9e-8dde-5ddfc80da621" data-elfsight-app-lazy></div>
             </div>
         </section>
 
+        <p>-</p>
+        <h2>👉 DATOS DEL POST-PUNK: &#x1F447;</h2>
         <!-- Sección de música -->
         <section id="musica">
             <h2>Música</h2>
